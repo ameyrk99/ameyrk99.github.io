@@ -117,7 +117,7 @@ li {
     margin-bottom: 1.5em;
 }
 
-.panel, #footer, #end {
+.root, #about, .panel, #footer, #end, .headsjq {
     display: none
 }
 
@@ -127,8 +127,4 @@ li {
     color: black;
     text-align: center;
     border: 2px black
-}
-
-.root {
-    display: none
 }

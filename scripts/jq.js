@@ -43,6 +43,6 @@ $(document).ready(
         )
 
         $("#about").fadeIn(1000)
-        $(".panel, #footer, #end").fadeIn(1800)
+        $(".headsjq, #edu, .panel, #footer, #end").fadeIn(1800)
     }
 )
