@@ -35,6 +35,12 @@ $(document).ready(
             }
         )
 
+        $(".allh").show(
+            function(){
+                $(".root").fadeIn(270)
+            }
+        )
+
         $("#about").fadeIn(1000)
         $(".panel, #footer, #end").fadeIn(1800)
     }
