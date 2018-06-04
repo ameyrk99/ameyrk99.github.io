@@ -42,7 +42,7 @@ $(document).ready(
             }
         )
 
-        $("#about").fadeIn(1000)
-        $(".headsjq, #edu, .panel, #footer, #end").fadeIn(1800)
+        $(".card-main").fadeIn(1000)
+        $(".card-header, #edu, .panel, #footer, #end").fadeIn(1800)
     }
 )

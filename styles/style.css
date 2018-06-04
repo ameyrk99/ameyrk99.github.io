@@ -117,7 +117,7 @@ li {
     margin-bottom: 1.5em;
 }
 
-.root, #about, .panel, #footer, #end, .headsjq {
+.root, .panel, #footer, #end {
     display: none
 }
 
@@ -126,5 +126,10 @@ li {
     height: 50px;
     color: black;
     text-align: center;
-    border: 2px black
+    border: 2px black;
+    display: none
+}
+
+.card-main {
+    display: none
 }
