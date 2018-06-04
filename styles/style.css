@@ -8,11 +8,18 @@ div.card {
     opacity: 0.95;
 }
 
-div.card:hover{
+div.card:hover {
     opacity: 1;
-    -webkit-transform: scale(1.015);
-    -ms-transform: scale(1.015);
-    transform: scale(1.015);
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
+div.heads:hover{
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 #social:hover{
@@ -97,4 +104,31 @@ div.card:hover{
     animation: swing 1s ease;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
+}
+
+#footer {
+    display: block;
+    margin: 5em 0
+}
+
+li {
+    float: left;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.panel, #footer, #end {
+    display: none
+}
+
+.card-header {
+    background: #ffffff;
+    height: 50px;
+    color: black;
+    text-align: center;
+    border: 2px black
+}
+
+.root {
+    display: none
 }
