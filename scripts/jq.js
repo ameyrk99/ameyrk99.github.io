@@ -42,7 +42,6 @@ $(document).ready(
             }
         )
 
-        $(".card-main").fadeIn(1000)
         $(".card-header, #edu, .panel, #footer, #end").fadeIn(1800)
     }
 )
