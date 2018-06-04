@@ -35,9 +35,9 @@ $(document).ready(
             }
         )
 
-        $(".allh").show(
+        $(".allh").click(
             function(){
-                $(".root").fadeIn(270)
+                $(".root").toggle(100)
             }
         )
 
