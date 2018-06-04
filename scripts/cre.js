@@ -1,5 +1,3 @@
-const musNote = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFpSURBVEhL7dRLKERRHMfxK49IlEezEQsbNrKXslTs2M7SRpGShQU7r4UsbGy8CikLU8rCwlq2spKyww7JM6/v79xz69LMmblzi9T86tM4ZzK/mXvP/XuF/FUa0Y851GsjbmrQjQns4QqfIU2IlAp0YARbOEP4Ay+hokls2r3IJYMIPvAWh5hFH3SJgpRiAbFKelCkDfvagiQWcYRnBF8m75JRTOEAN3ZP3nCCZezbvViXS86xDZV2ohJBxhGrZAB12nAkdkmbWbnzv0t06tawgV1EKqlGAq6SYeg9nbY7+3dOJbVI4QP6h2v7+rOkGPfQw1kOnbJj5FSygxfMYwaPSFfSAO2PmZWfaWhPsy1jyqCCJbPyo6markRPvebWKVrRjgu7dqYET1gxKz+aR++oMqvv6cUD9CVE96ULWbMOjQoV6Re9QqcmU5qhCT2E8MB0RqdqFboXGnoaIdme9LyjS6d7VMhvxvO+APembFj6chI5AAAAAElFTkSuQmCC"
-
 const imgStyle = {
     height: '100%',
     width: '100%',
@@ -9,7 +7,6 @@ const imgStyle = {
 
 const abt = (
     <div className="card card-main border-primary text-black mb-3" id="about">
-        <div className="card-header">About</div>
         <img style={imgStyle} src="src/profilePhoto.jpg" alt="Profile image" />
         <div className="card-body">
             <p className="card-text">
