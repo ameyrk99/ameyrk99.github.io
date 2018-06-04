@@ -35,9 +35,10 @@ $(document).ready(
             }
         )
 
-        $(".allh").mouseover(
+        $(".allh").click(
             function(){
-                $(".root").toggle(100)
+                $(".root").slideUp(1)
+                $(".root").toggle(220)
             }
         )
 
