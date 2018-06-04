@@ -35,7 +35,7 @@ $(document).ready(
             }
         )
 
-        $(".allh").click(
+        $(".allh").mouseover(
             function(){
                 $(".root").toggle(100)
             }
