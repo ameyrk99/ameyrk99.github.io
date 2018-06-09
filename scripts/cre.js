@@ -195,12 +195,25 @@ const con = (
     </div>
 )
 
-const ren = [abt, edu, skills, act, hob, git, con]
-const targets = ["about", "edu", "skills", "act", "hob", "git", "con"]
+const extras = (
+    <div>
+        <div class="root col-lg-12" id="edu">{edu}</div>
+        <div class="root col-lg-12" id="skills">{skills}</div>
+        <div class="root col-lg-12" id="act">{act}</div>
+        <div class="root col-lg-12" id="hob">{hob}</div>
+        <div class="root col-lg-12" id="git">{git}</div>
+        <div class="root col-lg-12" id="con">{con}</div>
+    </div>
+)
 
-for (var i = 0; i < 7; i++) {
-    ReactDOM.render(
-        ren[i],
-        document.getElementById(targets[i])
-    )
-}
+
+ReactDOM.render(
+    abt,
+    document.getElementById("about")
+)
+
+ReactDOM.render(
+    extras,
+    document.getElementById("extras")
+)
+
