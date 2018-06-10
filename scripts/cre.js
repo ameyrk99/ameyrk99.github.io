@@ -197,23 +197,40 @@ const con = (
 
 const extras = (
     <div>
-        <div class="root col-lg-12" id="edu">{edu}</div>
-        <div class="root col-lg-12" id="skills">{skills}</div>
-        <div class="root col-lg-12" id="act">{act}</div>
-        <div class="root col-lg-12" id="hob">{hob}</div>
-        <div class="root col-lg-12" id="git">{git}</div>
-        <div class="root col-lg-12" id="con">{con}</div>
+        <div className="root col-lg-12" id="edu">{edu}</div>
+        <div className="root col-lg-12" id="skills">{skills}</div>
+        <div className="root col-lg-12" id="act">{act}</div>
+        <div className="root col-lg-12" id="hob">{hob}</div>
+        <div className="root col-lg-12" id="git">{git}</div>
+        <div className="root col-lg-12" id="con">{con}</div>
     </div>
 )
 
+const headers = (
+    <div className="row">
+        <div className="col-sm-2 card-header heads eduh">Education</div>
+        <div className="col-sm-2 card-header heads skillsh">Skills</div>
+        <div className="col-sm-2 card-header heads acth">Activites</div>
+        <div className="col-sm-2 card-header heads hobh">Hobbies</div>
+        <div className="col-sm-2 card-header heads gith">Github</div>
+        <div className="col-sm-2 card-header heads conh">Connect</div>
+    </div>
+)
 
-ReactDOM.render(
-    abt,
-    document.getElementById("about")
+const rest = (
+    <div className="row">
+        <div className="col-lg-4">
+            <div id="about">{abt}</div>
+        </div>
+        <div className="col-lg-7">
+            <div id="headers">{headers}</div><br/>
+            <div id="extras">{extras}</div>
+        </div>
+    </div>
 )
 
 ReactDOM.render(
-    extras,
-    document.getElementById("extras")
+    rest,
+    document.getElementById("rest")
 )
 

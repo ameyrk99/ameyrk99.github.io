@@ -3,8 +3,8 @@ $(document).ready(
         $(".eduh").click(
             function(){
                 $(".eduh").toggleClass("opa")
-                $("#edu").slideToggle(270)
-                $("#skills, #act, #hob, #git, #con").hide(270)
+                $("#edu").slideToggle(250)
+                $("#skills, #act, #hob, #git, #con").hide(250)
                 $(".skillsh, .hobh, .acth, .gith, .conh").removeClass("selected")
                 $(".eduh").addClass("selected")
             }
@@ -13,8 +13,8 @@ $(document).ready(
         $(".skillsh").click(
             function(){
                 $(".skillsh").toggleClass("shrink")
-                $("#skills").slideToggle(270)
-                $("#edu, #act, #hob, #git, #con").hide(270)
+                $("#skills").slideToggle(250)
+                $("#edu, #act, #hob, #git, #con").hide(250)
                 $(".eduh, .hobh, .acth, .gith, .conh").removeClass("selected")
                 $(".skillsh").addClass("selected")
             }
@@ -23,8 +23,8 @@ $(document).ready(
         $(".acth").click(
             function(){
                 $(".acth").toggleClass("shrink")
-                $("#act").slideToggle(270)
-                $("#edu, #skills, #hob, #git, #con").hide(270)
+                $("#act").slideToggle(250)
+                $("#edu, #skills, #hob, #git, #con").hide(250)
                 $(".eduh, .hobh, .skillsh, .gith, .conh").removeClass("selected")
                 $(".acth").addClass("selected")
             }
@@ -33,8 +33,8 @@ $(document).ready(
         $(".hobh").click(
             function(){
                 $(".hobh").toggleClass("shrink")
-                $("#hob").slideToggle(270)
-                $("#edu, #skills, #act, #git, #con").hide(270)
+                $("#hob").slideToggle(250)
+                $("#edu, #skills, #act, #git, #con").hide(250)
                 $(".eduh, .skillsh, .acth, .gith, .conh").removeClass("selected")
                 $(".hobh").addClass("selected")
             }
@@ -43,8 +43,8 @@ $(document).ready(
         $(".gith").click(
             function(){
                 $(".gith").toggleClass("shrink")
-                $("#git").slideToggle(270)
-                $("#edu, #skills, #hob, #act, #con").hide(270)
+                $("#git").slideToggle(250)
+                $("#edu, #skills, #hob, #act, #con").hide(250)
                 $(".eduh, .hobh, .acth, .skillsh, .conh").removeClass("selected")
                 $(".gith").addClass("selected")
             }
@@ -53,8 +53,8 @@ $(document).ready(
         $(".conh").click(
             function(){
                 $(".conh").toggleClass("shrink")
-                $("#con").slideToggle(270)
-                $("#edu, #skills, #hob, #act, #git").hide(270)
+                $("#con").slideToggle(250)
+                $("#edu, #skills, #hob, #act, #git").hide(250)
                 $(".eduh, .hobh, .acth, .gith, .skillsh").removeClass("selected")
                 $(".conh").addClass("selected")
             }
