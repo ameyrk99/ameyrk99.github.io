@@ -62,6 +62,6 @@ $(document).ready(
 
         $(".skillsh, .hobh, .acth, .gith, .conh").removeClass("selected")
         $(".eduh").addClass("selected")
-        $(".card-header, #edu, .panel, #footer, #end").fadeIn(1800)
+        $("#edu").toggle(250)
     }
 )

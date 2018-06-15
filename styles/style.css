@@ -7,7 +7,7 @@ div.card {
     color: black;
     opacity: 0.95;
 }
-
+ 
 div.card:hover {
     opacity: 1;
     -webkit-transform: scale(1.02);
@@ -106,18 +106,13 @@ div.heads:hover{
     animation-iteration-count: 1;
 }
 
-#footer {
-    display: block;
-    margin: 5em 0
-}
-
 li {
     float: left;
     margin-right: 1.5em;
     margin-bottom: 1.5em;
 }
 
-.root, .panel, #footer, #end {
+.root, .panel {
     display: none
 }
 
@@ -128,7 +123,6 @@ li {
     color: black;
     text-align: center;
     border: 2px solid #000000;
-    display: none
 }
 
 .selected {
