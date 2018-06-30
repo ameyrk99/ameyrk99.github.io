@@ -20,14 +20,12 @@ const edu = (
     <div>
         <div className="card">
             <div className="card-body">
-                <div className="row">
-                    <div className="col-lg-7"><img style={imgStyle} src="src/uta.jpg" alt="UTA photo" /></div>
-                    <div className="col-lg-5">
-                        <h4>Education</h4><br /><br />
-                        <p className="card-text">
+                <div><img style={imgStyle} src="src/uta.jpg" alt="UTA photo" /></div><br/>
+                <div>
+                    <h4>Education</h4>
+                    <p className="card-text">
                             I did my high school at Loknete Vyankatrao Hiray College, Nashik, MH, India and currently study at <span className="bg-success">UTA</span>, TX under the Honors College and the College of Engineering. My Major is <span className="bg-success">Computer Science</span>, and I'm considering doing a minor in Physics.
-                        </p>
-                    </div>
+                    </p>
                 </div>
             </div>
         </div>
@@ -46,18 +44,16 @@ const skills = (
     <div>
         <div className="card">
             <div className="card-body">
-                <div className="row">
-                    <div className="col-lg-7"><img style={imgStyle} src="src/sketch.jpg" alt="sketch" /></div>
-                    <div className="col-lg-5">
-                        <h4>Skills</h4><br /><br />
-                        <p className="card-text">
-                            <span className="bg-info">Python</span> <span className="bg-danger">Java</span> <span className="bg-danger">C</span> <span className="bg-primary" style={styleWhite}>HTML</span> <span className="bg-primary" style={styleWhite}>CSS</span> <span className="bg-primary" style={styleWhite}>BootStrap</span> <span className="bg-warning">Javascript</span> <span style={styleMat}>MATLAB</span>.
-                            <br />
-                            <br /> I speak Marathi, English, Hindi, and I'm learning Japanese, and Spanish. I also play
-                            Tabla. I am also good at sketching.
-                        </p>
-                    </div>
-                </div>
+            <div><img style={imgStyle} src="src/sketch.jpg" alt="sketch" /></div><br/>
+            <div>
+                <h4>Skills</h4>
+                <p className="card-text">
+                    <span className="bg-info">Python</span> <span className="bg-danger">Java</span> <span className="bg-danger">C</span> <span className="bg-primary" style={styleWhite}>HTML</span> <span className="bg-primary" style={styleWhite}>CSS</span> <span className="bg-primary" style={styleWhite}>BootStrap</span> <span className="bg-warning">Javascript</span> <span style={styleMat}>MATLAB</span>.
+                    <br />
+                    <br /> I speak Marathi, English, Hindi, and I'm learning Japanese, and Spanish. I also play
+                        Tabla. I am also good at sketching.
+                </p>
+            </div>
             </div>
         </div>
     </div>
@@ -76,15 +72,13 @@ const act = (
     <div>
         <div className="card">
             <div className="card-body">
-                <div className="row">
-                    <div className="col-lg-7"><img style={imgStyle} src="src/esports.jpg" alt="LAN party photo" /></div>
-                    <div className="col-lg-5">
-                        <h4>Activites</h4><br /><br />
+            <div><img style={imgStyle} src="src/esports.jpg" alt="LAN party photo" /></div><br/>
+                    <div>
+                        <h4>Activites</h4>
                         <p className="card-text">
                             I'm a member of <span className="bg-success">Leadership Honors Program</span> and <span style={stylePy}>Py</span><span style={styleMavs}>Mavs</span> at UTA and also a part of <span className="bg-danger">UTA ESports</span>. I participate in long distance cycling events because I love to cycle.
                         </p>
                     </div>
-                </div>
             </div>
         </div>
     </div>
@@ -94,9 +88,8 @@ const hob = (
     <div>
         <div className="card">
             <div className="card-body">
-                <div className="row">
-                    <div className="col-lg-7"><img style={imgStyle} src="src/cycling.jpg" alt="cycling photo" /></div>
-                    <div className="col-lg-5">
+            <div><img style={imgStyle} src="src/cycling.jpg" alt="cycling photo" /></div><br/>
+                    <div>
                         <h4>Hobbies</h4><br /><br />
                         <p className="card-text">
                             I like learning natural languages (and have an aim of being fluent in 7 before I'm 25). I love <span className="bg-success">cycling</span> and <span className="bg-primary" style={styleWhite}>sketching</span>(I even have a blog. Check <a href="https://ameyrk.tumblr.com/" target="_blank"><u>it</u></a> out).
@@ -104,7 +97,6 @@ const hob = (
                             <br /> ... ¯\_(ツ)_/¯
                         </p>
                     </div>
-                </div>
             </div>
         </div>
     </div>
@@ -114,10 +106,9 @@ const git = (
     <div>
         <div className="card">
             <div className="card-body">
-                <div className="row">
-                    <div className="col-lg-7"><img style={imgStyle} src="src/nmsi3wm.png" alt="nms i3wm rice" /></div>
-                    <div className="col-lg-5">
-                        <h4>Github</h4><br /><br />
+            <div><img style={imgStyle} src="src/nmsi3wm.png" alt="nms i3wm rice" /></div><br/>
+                    <div>
+                        <h4>Github</h4>
                         <p className="card-text">
                             <a href="https://github.com/ameyrk99/no-mans-sky-rice-i3wm" target="_blank">
                                 <u>No Man's Sky i3WM Rice</u>
@@ -134,7 +125,6 @@ const git = (
                             </a> - This website
                                 </p>
                     </div>
-                </div>
             </div>
         </div>
     </div>
@@ -148,10 +138,10 @@ const con = (
     <div>
         <div className="card">
             <div className="card-body">
-                <div className="row">
-                    <div className="col-lg-8"><img style={imgStyle} src="src/connect.jpg" alt="LAN party photo" /></div>
-                    <div className="col-lg-4">
-                        <h4>Connect with me:</h4><br/><br/>
+                <div>
+                    <div><img style={imgStyle} src="src/connect.jpg" alt="LAN party photo" /></div><br/>
+                    <div>
+                        <h4>Connect with me:</h4>
                         <ul className="list-unstyled">
                             <li>
                                 <a href="https://github.com/ameyrk99/" target="_blank">
@@ -196,13 +186,19 @@ const con = (
 )
 
 const extras = (
-    <div>
-        <div className="root col-lg-12" id="edu">{edu}</div>
-        <div className="root col-lg-12" id="skills">{skills}</div>
-        <div className="root col-lg-12" id="act">{act}</div>
-        <div className="root col-lg-12" id="hob">{hob}</div>
-        <div className="root col-lg-12" id="git">{git}</div>
-        <div className="root col-lg-12" id="con">{con}</div>
+    <div className="row">
+        <div className="row col-lg-6">
+            <div className="root col-lg-12" id="edu">{edu}</div>
+            <div className="root col-lg-12" id="act">{act}</div>
+            <div className="root col-lg-12" id="git">{git}</div>
+        </div>
+        <div className="row col-lg-6">
+            <div className="root col-lg-12" id="skills">{skills}</div>
+            <div className="root col-lg-12" id="hob">{hob}</div>
+            <div className="root col-lg-12" id="con">{con}</div>
+        </div>
+        
+        
     </div>
 )
 
@@ -223,7 +219,7 @@ const rest = (
             <div id="about">{abt}</div>
         </div>
         <div className="col-lg-7">
-            <div id="headers">{headers}</div><br/>
+            {/* <div id="headers">{headers}</div><br/> */}
             <div id="extras">{extras}</div>
         </div>
     </div>

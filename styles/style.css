@@ -112,10 +112,6 @@ li {
     margin-bottom: 1.5em;
 }
 
-.root, .panel {
-    display: none
-}
-
 .card-header {
     background: #ffffff;
     font-size: 15px;
@@ -129,4 +125,8 @@ li {
     background: #000000;
     color: #ffffff;
     border: 2px solid #ffffff;
+}
+
+.root{
+    padding: 1%
 }
