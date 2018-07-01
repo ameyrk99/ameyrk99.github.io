@@ -48,7 +48,7 @@ const skills = (
             <div>
                 <h4>Skills</h4>
                 <p className="card-text">
-                    <span className="bg-info">Python</span> <span className="bg-danger">Java</span> <span className="bg-danger">C</span> <span className="bg-primary" style={styleWhite}>HTML</span> <span className="bg-primary" style={styleWhite}>CSS</span> <span className="bg-primary" style={styleWhite}>BootStrap</span> <span className="bg-warning">Javascript</span> <span style={styleMat}>MATLAB</span>.
+                    <span className="bg-info">Python</span> <span className="bg-danger">Java</span> <span className="bg-danger">C</span> <span className="bg-primary" style={styleWhite}>CSS</span> <span className="bg-primary" style={styleWhite}>BootStrap</span> <span className="bg-warning">Javascript</span> <span style={styleMat}>MATLAB</span>.
                     <br />
                     <br /> I speak Marathi, English, Hindi, and I'm learning Japanese, and Spanish. I also play
                         Tabla. I am also good at sketching.
