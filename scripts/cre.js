@@ -90,7 +90,7 @@ const hob = (
             <div className="card-body">
             <div><img style={imgStyle} src="src/cycling.jpg" alt="cycling photo" /></div><br/>
                     <div>
-                        <h4>Hobbies</h4>
+                        <h4>Hobbies</h4><br /><br />
                         <p className="card-text">
                             I like learning natural languages (and have an aim of being fluent in 7 before I'm 25). I love <span className="bg-success">cycling</span> and <span className="bg-primary" style={styleWhite}>sketching</span>(I even have a blog. Check <a href="https://ameyrk.tumblr.com/" target="_blank"><u>it</u></a> out).
                             <br /> I also love reading books, especially science-fiction and mystery.
