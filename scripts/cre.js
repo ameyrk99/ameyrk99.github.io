@@ -10,7 +10,7 @@ const abt = (
         <img style={imgStyle} src="src/profilePhoto.jpg" alt="Profile image" />
         <div className="card-body">
             <p className="card-text">
-                Hi! I'm Amey, and I am a 18 year old Computer Science student at the College of Engineering and the Honors College at The University of Texas at Arlington. Somewhere down the future, I'm hoping to work on <span className="bg-info">Artificial Intelligence</span> or/and <span className="bg-info">Quantum Computing</span>.
+                Hi! I'm Amey, and I am a Computer Science student at the College of Engineering and the Honors College at The University of Texas at Arlington. Somewhere down the future, I'm hoping to work on <span className="bg-info">Artificial Intelligence</span> or/and <span className="bg-info">Quantum Computing</span>.
             </p>
         </div>
     </div>
