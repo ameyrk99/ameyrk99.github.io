@@ -158,32 +158,32 @@ const con = (
                         <ul className="list-unstyled">
                             <li>
                                 <a href="https://github.com/ameyrk99/" target="_blank">
-                                    <i class="fab fa-github fa-lg"></i>    
+                                    <i className="fab fa-github fa-lg"></i>    
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.facebook.com/Ameyrkhairnar" target="_blank">
-                                    <i class="fab fa-facebook fa-lg"></i>
+                                    <i className="fab fa-facebook fa-lg"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://ameyrk.tumblr.com/" target="_blank">
-                                    <i class="fab fa-tumblr fa-lg"></i>
+                                    <i className="fab fa-tumblr fa-lg"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/ameykhairnar99/" target="_blank">
-                                    <i class="fab fa-instagram fa-lg"></i>
+                                    <i className="fab fa-instagram fa-lg"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.linkedin.com/in/amey-khairnar-726453158/" target="_blank">
-                                    <i class="fab fa-linkedin fa-lg"></i>
+                                    <i className="fab fa-linkedin fa-lg"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="mailto:ameykhairnar99@gmail.com" target="_blank">
-                                    <i class="far fa-envelope fa-lg"></i>
+                                    <i className="far fa-envelope fa-lg"></i>
                                 </a>
                             </li>
                             <li>and, check out my
@@ -211,7 +211,7 @@ const extras = (
 )
 
 const headerStyles = {
-    'font-size': '80%'
+    'fontSize': '80%'
 }
 
 const headers = (
