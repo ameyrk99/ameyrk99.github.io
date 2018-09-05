@@ -2,40 +2,66 @@ $(document).ready(
     function () {
         $(".eduh").click(
             function(){
-                $("#edu").slideToggle(270)
-                $("#skills, #act, #hob, #git").hide(270)
+                $(".eduh").toggleClass("opa")
+                $("#edu").slideToggle(250)
+                $("#skills, #act, #hob, #git, #con").hide(250)
+                $(".skillsh, .hobh, .acth, .gith, .conh").removeClass("selected")
+                $(".eduh").addClass("selected")
             }
         )
 
         $(".skillsh").click(
             function(){
-                $("#skills").slideToggle(270)
-                $("#edu, #act, #hob, #git").hide(270)
+                $(".skillsh").toggleClass("shrink")
+                $("#skills").slideToggle(250)
+                $("#edu, #act, #hob, #git, #con").hide(250)
+                $(".eduh, .hobh, .acth, .gith, .conh").removeClass("selected")
+                $(".skillsh").addClass("selected")
             }
         )
 
         $(".acth").click(
             function(){
-                $("#act").slideToggle(270)
-                $("#edu, #skills, #hob, #git").hide(270)
+                $(".acth").toggleClass("shrink")
+                $("#act").slideToggle(250)
+                $("#edu, #skills, #hob, #git, #con").hide(250)
+                $(".eduh, .hobh, .skillsh, .gith, .conh").removeClass("selected")
+                $(".acth").addClass("selected")
             }
         )
 
         $(".hobh").click(
             function(){
-                $("#hob").slideToggle(270)
-                $("#edu, #skills, #act, #git").hide(270)
+                $(".hobh").toggleClass("shrink")
+                $("#hob").slideToggle(250)
+                $("#edu, #skills, #act, #git, #con").hide(250)
+                $(".eduh, .skillsh, .acth, .gith, .conh").removeClass("selected")
+                $(".hobh").addClass("selected")
             }
         )
 
         $(".gith").click(
             function(){
-                $("#git").slideToggle(270)
-                $("#edu, #skills, #hob, #act").hide(270)
+                $(".gith").toggleClass("shrink")
+                $("#git").slideToggle(250)
+                $("#edu, #skills, #hob, #act, #con").hide(250)
+                $(".eduh, .hobh, .acth, .skillsh, .conh").removeClass("selected")
+                $(".gith").addClass("selected")
             }
         )
 
-        $("#about").fadeIn(1000)
-        $(".panel, #footer, #end").fadeIn(1800)
+        $(".conh").click(
+            function(){
+                $(".conh").toggleClass("shrink")
+                $("#con").slideToggle(250)
+                $("#edu, #skills, #hob, #act, #git").hide(250)
+                $(".eduh, .hobh, .acth, .gith, .skillsh").removeClass("selected")
+                $(".conh").addClass("selected")
+            }
+        )
+
+        $(".skillsh, .hobh, .acth, .gith, .conh").removeClass("selected")
+        $(".eduh").addClass("selected")
+        $("#edu").toggle(250)
     }
 )

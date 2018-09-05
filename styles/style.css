@@ -1,13 +1,13 @@
 body {
     font-family: "Courier New", Courier, monospace;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 div.card {
     color: black;
     opacity: 0.95;
 }
-
+ 
 div.card:hover {
     opacity: 1;
     -webkit-transform: scale(1.02);
@@ -17,20 +17,15 @@ div.card:hover {
 
 div.heads:hover{
     opacity: 1;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 #social:hover{
     -webkit-transform: scale(1.15);
     -ms-transform: scale(1.15);
     transform: scale(1.15);
-}
-
-#social {
-    height: 42px;
-    width: 42px
 }
 
 #heading {
@@ -117,18 +112,21 @@ li {
     margin-bottom: 1.5em;
 }
 
-.panel, #footer, #end {
+.root, .panel {
     display: none
 }
 
 .card-header {
     background: #ffffff;
+    font-size: 15px;
     height: 50px;
     color: black;
     text-align: center;
-    border: 2px black
+    border: 2px solid #000000;
 }
 
-.root {
-    display: none
+.selected {
+    background: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
 }

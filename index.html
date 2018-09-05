@@ -6,111 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Amey Khairnar</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGGSURBVDhP3dTLK0RhGMfx4xLChtwiiURS2ElZK8mCWCAsKGVnS0osRJEi2bAQiR02IrdyyS2ShZU/wNof4Ps7z5kzjDnNlBW/+jTP+zZz5p3nPGecf5Fs1KAamdrwkuC9xp1OXOAYa9jElecFtzjFA87QhKhJwTZWkKuNiOikB9iDTq6UQl/e4q4isoNBKwOTiEW8I00bpBD7VobTAZ0sniThDuXuynFScW5lONrIszJm0vEIXVhpxbSVlgqcWBkzusOrGHBXdlHdrDJ3RdT8V+hNsaKLLWDJXVl0sjErLYeYxLq7Ck4J9N4phOZwGBvw51I3Yg5DUJOjJQejuEeDNoguMI43aNT8aH4KUIUPNCMLleiFhvoG6ldoRNSiXahNs9r4mmfvVanDMvSztjCCeoSi+evHE9qhzxbhW/QIZVgZGM1YD9SSGWiIj7y9H+mCTlQLv7EkH23QoGveJqDWdEO97ENgGqGfqF5dQw+8eqQ/BDX9EpoznXAexfhVdBeTrfzbcZxP+mBESeZ+agEAAAAASUVORK5CYII=">
     <link rel="stylesheet" href="styles/style.css">
-    <script src="src/react.development.js"></script>
-    <script src="src/react-dom.development.js"></script>
-    <script src="src/babel.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <!-- <script src="scripts/react.development.js"></script>
+    <script src="scripts/react-dom.development.js"></script>
+    <script src="scripts/babel.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <script src="scripts/jq.js"></script>
     <script type="text/babel" src="scripts/cre.js"></script>
+    <script src="scripts/jq.js"></script>
 
 </head>
 
 <body style="background-color: black;">
 
-        <div class="containter">
-            <div class="jumbotron" style="background: black;">
-                <h1 id="heading">Amey Khairnar</h1>
-                <br>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="card card-main border-primary text-black mb-3" id="about">
-                            <div class="card-header">About</div>
-                            <img style="height: 100%; width: 100%; display: block; margin: 0 auto" src="src/profilePhoto.jpg" alt="Profile image">
-                            <div class="card-body">
-                                <p class="card-text">
-                                    Hi! I'm
-                                    <span onclick="playSound('name');" id="name">
-                                        <u>Amey</u><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFpSURBVEhL7dRLKERRHMfxK49IlEezEQsbNrKXslTs2M7SRpGShQU7r4UsbGy8CikLU8rCwlq2spKyww7JM6/v79xz69LMmblzi9T86tM4ZzK/mXvP/XuF/FUa0Y851GsjbmrQjQns4QqfIU2IlAp0YARbOEP4Ay+hokls2r3IJYMIPvAWh5hFH3SJgpRiAbFKelCkDfvagiQWcYRnBF8m75JRTOEAN3ZP3nCCZezbvViXS86xDZV2ohJBxhGrZAB12nAkdkmbWbnzv0t06tawgV1EKqlGAq6SYeg9nbY7+3dOJbVI4QP6h2v7+rOkGPfQw1kOnbJj5FSygxfMYwaPSFfSAO2PmZWfaWhPsy1jyqCCJbPyo6markRPvebWKVrRjgu7dqYET1gxKz+aR++oMqvv6cUD9CVE96ULWbMOjQoV6Re9QqcmU5qhCT2E8MB0RqdqFboXGnoaIdme9LyjS6d7VMhvxvO+APembFj6chI5AAAAAElFTkSuQmCC">
-                                    </span>, and I am a 18 year old Computer Science student at the College of Engineering and
-                                    the Honors College at The University of Texas at Arlington. Somewhere down the future, I'm
-                                    hoping to work on
-                                    <span class="bg-info">Artificial Intelligence</span> or/and
-                                    <span class="bg-info">Quantum Computing</span>.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="row">
-                            <div class="col-sm-2 card-header heads eduh">Education</div>
-                            <div class="col-sm-2 card-header heads skillsh">Skills</div>
-                            <div class="col-sm-2 card-header heads acth">Activites</div>
-                            <div class="col-sm-2 card-header heads hobh">Hobbies</div>
-                            <div class="col-sm-2 card-header heads gith">Github</div>
-                        </div><br>
-                        <div class="root col-lg-10" id="edu"></div>
-                        <div class="root col-lg-10" id="skills"></div>
-                        <div class="root col-lg-10" id="act"></div>
-                        <div class="root col-lg-10" id="hob"></div>
-                        <div class="root col-lg-10" id="git"></div>
-                    </div>
-                    <div class="col-lg-1">
-                        <div class="card">
-                            <div class="card-body">
-                                Connect :) <br><br>
-                                <ul class="list-unstyled">
-                            <li>
-                                <a href="https://github.com/ameyrk99/" target="_blank">
-                                    <img id="GitLogo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANRSURBVGhD7dlZqE1RHMfxa0ghhExRxkRIUkiGMmTIgyFTtxCZXkiSEIqSN0SRJA+SFA9CMhTxICFTUQqZJfM8+/6us2u17//cu9c5e917Zf/q073nnH3+a5+z917DPiVZsmSp9jRFvb///htphRnYjYt4i9+Ob7iNg1iK3qgxqYUxOIofcHc8iRtYgoaotgzCJVg76OsFFqEuqiwNsAO/YO1UMS6jG4KnPa7D2om0vMcEBEt3PILVeNp0vc1F6mmHh7AaDUWnbilSi66J0KdTPl/RD6lkO6xGZCaGYBUe557zpSO9EuoF5+Sec91DYxSVwcjXO6nLdKPRex1+ItrmEx7gau7vZ0SvaTtt7476GpfeINomsgkFR0UrGiduwcpUzEanskfl0wW6kKeUPSqfO4i39R1dUVDGIl7QdRchkq9T0dSnoGjaYRWMaO6U9kis08w9NV1f0AxeaQ0dTqugK7UeJZeBsNqJzINXNIu1Crmeog3SjMYrdSJWe3IYXtH5aBVyjUOIqBOw2pPXqI3E0XrCKhS5gFBRb3kNVrui+V7ixBdFcYsRMsthtSsjkSj6RqwCLo3CITMCVrsyHYnSBFYBV0+ETF9Y7UriWbEupsqWrUMRMqNgtSuTkTjPYRWJ6OZByKyG1a4MQ+LopoBVJBK616po2dALibMfVhHXJITILFjtyUd43SObD6uQS9Ntr28nQfpDO2u1J6fhlc6wCsW9xHikkWmobPxaA+/chFXMchLDUQc+0fajcQZWXZdmxVrLeEfL2HgxdctaR8efj2jCtxfLMABWNJhq5N4HHVGrjuU4Coouqidwi51Ac+x0nrNcQUtY6Qifox3RkSs4CxAvuAXKZsRfk1doi4qiU0Q34qz3W7TIKyrq00/BLaqbEX2g16wjswJJshbx91p0wyLf+t8rOhXi394uRNHPCT2gRZHugSWNjlq+Za1LZ0Vq0WzUvcj1wRqh2NyHu9Nx25B6dGPZnUwegs8RsHIe7o67DsC3O08cTUvcQesZ9mBjju9pcA7uzkfUkQT7EFH0+0W+SaV2zCfxD/IBC1Fl0U9l6xHvBIr5IMfQAdUS3Q7ainco5IOcxRGoM6kRqY+J2FD2KHla5P5myZIly3+VkpI/CXqqzeTbW68AAAAASUVORK5CYII=">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/Ameyrkhairnar" target="_blank">
-                                    <img id="social" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHNSURBVGhD7do9SgRBEAXgQdTUTPQKYuQVvIGgiZEIgoGJ+HcAE28gayYYmqupqaH4kygeQBM10UBfDSsUyxtqprtapqEffMnb7ekp3B0FuxpmEg7gAb7hp+fkHuVe92EC6sgQV8AW5OASZIb6J8HekJNdqB5Vkas7yOI7YfkC+kKOaJkjWuaIlqm9wCnswDosNzgBtp6hZSrPsARj0CabwK7D0DKFW5iGLundIPJ4nIeu6d0g5xCS3g2yCiHp3SBz0CYzsAIbQ2fArsfQ0tsUWFmDT2Dr26ClN+txuwCxf/PR0puVI2DruqClNytdvgtNaOnNShlEoaU3K70aRJ46bw2sDICt+/MBbE+NliGuIVW2gO2p0TJEykGOge2p0TJEykHk2mxPjZYhUg7yCmxPjZYhUg0yC2y/UbQMkWqQRWD7jaJliHe4aWDlENg68QRsv1G09Gal/GZXaOnNShlEoaU3K2UQhZberJRBFFp6s1IGUWjpzUoZRKGlNytlEIWW3qy4DPIfBwasxA5SHxiQUzbsRU9WYgepj3DsqSIVK7GDyL+56yNCclSIvcGLlZhBLmAc6sjhLZnqHuTzxhbEsNJ1ELlH+ThtA4aoql+OEdc7LvThiAAAAABJRU5ErkJggg==">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://ameyrk.tumblr.com/" target="_blank">
-                                    <img id="socialTumblr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG1SURBVGhD7dlPKwVRHMbxiw0lsbKRpffAjr234E/KxkYWNt6BF6AkWZF/xQ6xslGyYSELWwsLEUlJ8X1E3abfuTPn3mbuGc5Tn7KY83Oe7nRn5k4lJiamrrRhCke4CIT2MoFWZIpK7OIzUDvQHlOjT8IaEJJJpOYQ1uKQHCA1V7AWh0R7TE0skvCGGUz/0N/vsI71VWiRSyTzBOtYX4UW2UIypSwyimRKV+Qc1hW4VEW02QFYKU2RRwzClVIUOUU/aiXoIs/QNSLLjdw+jg0vsGa75FJkA41GM6zZLrkUWUej0QxrtkssUotu+3uqdMGVblQf+8v30SGXIkm1/kmpLoixiIdYxEcs4iEW8fFnitzAlXtYa3wVUuQOruzBWuOrkCIf6ICVPqjMLa6hZ5hVzGEYus23ZiYVUkSGUE+WYM1LKqzIIupJcEX07K67Wt8EV0T0jNGCrOnFGaxZSYUWkRV0wpV2jGAZ+q3YmmEpvIg8YA3zmMUCdAqd4BXWmjRNKZKH/1Xkz7x604tGa3FIxpAa/Yq+DWtACDaR+WtdZcah08x6ed8MOp20J59rU0xMzHcqlS8Usa6kFyO4wQAAAABJRU5ErkJggg==">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/ameykhairnar99/" target="_blank">
-                                    <img id="social" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM0SURBVGhD7drLy8xRHMfxiUghQjYuuSxsUMhdothQsmAlfwCRsKCsrGTjWspGrrFkoeSycEk2RNmhsCAsXXLn/Zlmns5z5jMz58xMzfxqPvWqp+/vnPOc8zzz+83vd2ZKUZbgAt7gJ/71GM1JczuPxajJUJyA69yr/uI4NPeBnIRrXATHUM5SuAZFof9M+WWmcyI88A37oPNlQY/RnDQ3zTGc81mU3gYF2Y9ej+YYzvk1aq5OC9GtbMKtBvZC0RzDOWsNgwoyB93KKcTzCd2HojnGx2oK/YV0IP2FoKbQX0iQsViNLdhToZ9V07F66YmFjMJO3MEvxONW6Zja7MBIhOnqQoZBk3qPeKxm3mE7NIayDKcb0PuM0vGFTMQDxGPkugeNlZqkhejdc3OCrYhvb0Jf8BTXK55Vaq6taCyN6X5XTHOM+9cU2nUV6zACcVRbj2twfdthi614Cb3GU7Mcr+DGaoUt5tLVZDxyMwHq68bMZYs5XmAcXHQ1moypGK6Cif4AGsONncMWU/3BfNTLWlRP8M+4hFmIo9tyPenF4+ewxVSaWLNsQ9hHC9uAOFcQtstli6l0wjaLXjpxv6+YjTArELfLYYspPmAImkXnh+uvy3QYbet8hGubwhZT6NEzjP7y7nw5CNdfj6ejEeY2XNsUtphCu31h5uETNkJ/3TE4gN9w/UU7I2HiHZ0ctpjiDMKEGwLfoSta2N6JNzo0pmuXwhZT3EAY3fSlTL5KbeM30ZtwbVPYYgptJsfRXaxr69xFHI3p2qawxVRzEWYVUt7YdN6sRBhdKFzbVLaYSrvhcXaj0WL0ktqFOO1upNtiKp3U0xFnDZ4gbv8YOhZnJn4gbp/DFnM8RL0bQi1SzyYyTQUT9X0EN3YOW8x1GfUW0yjq0+49VpUttkLPFZOQminoxPN+lS22Sp9bHMIM1IuOHUb8GUe7bLETnuMijlToZ9Vc206wxSKyxSKyxSKyxSKyxSLqya9q5Cp/GNpo/7Yoyh9PnwsKRVX+woC+/tDu5lg3ae4Dj8x6rnCNiuAoBqJdDxWK9J/RXDXnQV9zqmYRdM7o5OnFq5nmpLnpnAh2YEql/1fJIB2Alt5iAAAAAElFTkSuQmCC">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/amey-khairnar-726453158/" target="_blank">
-                                    <img id="social" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI5SURBVGhD7dq9jw1hGIbxI0FHtEKipV0ljUahFwmFRqMT8VkodP4BlYKoVAqVj06hIQqFj0okKoUIEUJ8XPfEJJPJte9YyZjzbuZJfsXe533OzJOdPWd2ZhZ/ajMu4CW+49eSyz5mX89jE5rKEPdhDTW4h8zQ/CZsQU3OYvGqE9TqOar4mxjyDfpCjTSskYY10rDrAU7hCPK5/RS2bmoaxk+cQL824AqsZ0oaxi2sVhnmCaxvKhpGDqVSXYL1TUXDOIhSnYH1TUXDuIhS3Yb1TUXDeIedsDqAH7C+qWjYeovj2IbUdpzDZ9j6KWlolu030KdhjTSMx8i3+mpewPo+wdZ3ZU2/7wNyOv4I+ddirUeAhrEfpToJ63uGocqarH2NnPbsQr924DK+oL8No2GMPcgNbGl+KtcK3sO21aVhjDlIvqNymvO3lY/7nPvZ9loaxpiDrGWItm7CttfSMMYc5F9qL2x7LQ1j2QZJ5VqWbTM0jLEH2YeH+Ijr2IqhygeEbTM0jDEH2YOv6PbdwVCdRrenS8MYc5CrsN7dKNVRWF9oGGMOkm9v6z2GUh2C9YWGMeYgWWO9ec9SZZ+sLzSMeRAM1TwIrC80jHkQDNU8CKwvNIx5EAzVPAisLzSMeRAM1X8dJFfbDxdcg/W9ga3vyhrrzXva+lbpDoCGNdKwRhrWaP08MFC6MlGL5hGO3O+wF2uS24DNI0J5VMgW1OAuNqKpPLyVqXKrIMebNSyT7GMOp1weYojF4jf14SHUi+uVEgAAAABJRU5ErkJggg==">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:amey.khairnar@mavs.uta.edu" target="_blank">
-                                    <img id="social" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFhSURBVGhD7dRBSgNBEIXhrMStN1BwK3gEFzmFKw/gAbxBzuAZArlAFrmAZ0qskpRMat50ume6ZvpBCj7UJ0j/Cq6C700czvRzurOAk0MTNBTgNRuUG+A1EzQ2wFssqFaAN1tQVIAXFjRXgFctaKkAb3RQKwFedlCrAd5gEEuAdxHEGOBpA/wGo96wFd+N0zf6d/eGF9H66Rv9u3vDLWTGgyF750mk7lGsgz2L1Okb/buL70v430ZtGxF+H+In2Ke4Hf29nj8y31/DUezsC7LTN+vbteH/P0VuUMR/rXdRct0A+xkXP1BdC1oyBAWY3mCGgu7FQ2V3InWpAAPHrmt/ocjLCTBwROYMKgkwcEyJDBoTYOCYo2bQlAADxxJTgmoEGDiOURJUM8DAcYpUUESAgWMN3aDIAAPHmvTxkQEGjozgyAiOjODICI6M4MgIjozgyAiOjODICI6M4MgIjmRWp19ezw4sdJ/NdQAAAABJRU5ErkJggg==">
-                                </a>
-                            </li><br>
-                            <li>and, check out my
-                                <a href="src/resume.pdf" target="_blank">
-                                    <img id="social" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ5SURBVGhD7ZnLq45RFMY/kYFIyUAGUkj5A9xSMpFLnAxMmCglJmaEkUykiKGJTDBQIimdDCgmbpNzBgYSE0kScsnE5ffQqtVqnxPvu9/9nq/2U7/BXt9qre85Z1/e/b2DqqqqbNoGN+BJIa7DFsiqE/CrJ9Q7i1ZBqkEpfoK+Q2udg1SDkpyB1roMvqjm7s6OiT01bq1Y9CR0rSPge1YjXtVIC1Ujk6kaaaGsRmbAGrgPvmgX58gILANTNiPr4CX4YiW4CfMgi5El8Bl8oZLcg6Mh1sjIefBF+mA0jBsZeQy+yFt44Uj9t96Dff4avkHMEZquvpbxFXzehzBuZGQMfJFd4DUNNoDfBDSnvabDWogbxVxI6Rb4vEhWI1o72mHsbjATHoFyzMh82Aiz/oz+5jwFq2VGVMPvWj4nRVYjB0BjXXTWK4D2gGJmRLudxq9ggQJoB1gtM6IvZrF/oRMjYr8CaBNoHI2I4wqghWCxKWFkN2hh6kDUFJIOg3JSRi4pgLSmLJaaWv4PNBFZjUQth3egnJQR39xiqcW+COzzichqZAXsg4NwBb6A5aSMnFIAzQGLTbk1EolGPsJSBdBKsLyhMbIYDoGmi+kqWN7QGPHSbnUBfF5RI/FwGoc78MzFIs9BOUIPfcr9ATHvLijnjYul+BTGjYxcBF+kD2TYjxsZ0e70HXyhkuix51iINTIibQU7I0ryALS2tOZ8vLERaTZsh4fgi94GnSc52QurQU8BUlYjJhXxReuvKP+hamQyVSMtVMTI0L7oOQu+aB+chtbSbU739FSDEqi3rgJZ1Ofrabv7Z9NmuAapl/tdoF76caOqqqq1BoPfbjShp+M37hwAAAAASUVORK5CYII=">resume</a>
-                            </li>
-                        </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="containter">
+        <div class="jumbotron" style="background: black; padding-left: 8%">
+            <h1 id="heading">Amey Khairnar</h1>
+            <br>
+            <div id="rest"></div>
         </div>
-
-        <p id="end" style="text-align: center;">Made with &#10084; by Amey Khairnar | 2018</p>
     </div>
 </body>
 
