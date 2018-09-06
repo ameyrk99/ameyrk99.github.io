@@ -7,7 +7,7 @@ const imgStyle = {
 
 const abt = (
     <div className="card card-main border-primary text-black mb-3" id="about">
-        <img style={imgStyle} src="src/profilePhoto.jpg" alt="Profile image" />
+        <img style={imgStyle} src="images/profilePhoto.jpg" alt="Profile image" />
         <div className="card-body">
             <p className="card-text">
             Hi! I'm Amey, and I am a Computer Science student at the College of Engineering and the Honors College at The University of Texas at Arlington. 
@@ -22,7 +22,7 @@ const edu = (
         <div className="card">
             <div className="card-body">
                 <div className="row">
-                    <div className="col-lg-7"><img style={imgStyle} src="src/uta.jpg" alt="UTA photo" /></div>
+                    <div className="col-lg-7"><img style={imgStyle} src="images/uta.jpg" alt="UTA photo" /></div>
                     <div className="col-lg-5">
                         <h4>Education</h4><br /><br />
                         <p className="card-text">
@@ -49,7 +49,7 @@ const skills = (
         <div className="card">
             <div className="card-body">
                 <div className="row">
-                    <div className="col-lg-7"><img style={imgStyle} src="src/sketch.jpg" alt="sketch" /></div>
+                    <div className="col-lg-7"><img style={imgStyle} src="images/sketch.jpg" alt="sketch" /></div>
                     <div className="col-lg-5">
                         <h4>Skills</h4><br /><br />
                         <p className="card-text">
@@ -79,7 +79,7 @@ const act = (
         <div className="card">
             <div className="card-body">
                 <div className="row">
-                    <div className="col-lg-7"><img style={imgStyle} src="src/esports.jpg" alt="LAN party photo" /></div>
+                    <div className="col-lg-7"><img style={imgStyle} src="images/esports.jpg" alt="LAN party photo" /></div>
                     <div className="col-lg-5">
                         <h4>Activites</h4><br /><br />
                         <p className="card-text">
@@ -98,7 +98,7 @@ const hob = (
         <div className="card">
             <div className="card-body">
                 <div className="row">
-                    <div className="col-lg-7"><img style={imgStyle} src="src/cycling.jpg" alt="cycling photo" /></div>
+                    <div className="col-lg-7"><img style={imgStyle} src="images/cycling.jpg" alt="cycling photo" /></div>
                     <div className="col-lg-5">
                         <h4>Hobbies</h4><br /><br />
                         <p className="card-text">
@@ -118,7 +118,7 @@ const git = (
         <div className="card">
             <div className="card-body">
                 <div className="row">
-                    <div className="col-lg-7"><img style={imgStyle} src="src/nmsi3wm.png" alt="nms i3wm rice" /></div>
+                    <div className="col-lg-7"><img style={imgStyle} src="images/project.png" alt="project screenshot" /></div>
                     <div className="col-lg-5">
                         <h4>Projects</h4><br /><br />
                         <p className="card-text">
@@ -152,7 +152,7 @@ const con = (
         <div className="card">
             <div className="card-body">
                 <div className="row">
-                    <div className="col-lg-8"><img style={imgStyle} src="src/connect.jpg" alt="LAN party photo" /></div>
+                    <div className="col-lg-8"><img style={imgStyle} src="images/connect.jpg" alt="LAN party photo" /></div>
                     <div className="col-lg-4">
                         <h4>Connect with me:</h4><br/><br/>
                         <ul className="list-unstyled">
@@ -187,7 +187,7 @@ const con = (
                                 </a>
                             </li>
                             <li>and, check out my
-                                <a href="src/resume.pdf" target="_blank">
+                                <a href="resume.pdf" target="_blank">
                                     <img id="social" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADuSURBVEhL5dW9DsFQGMbxrhhMJrtNIiImV8BktbsEwWI1uQC3YLaKwWohRrPBIJhM+D91TtJJe3w0Pp7kl5425+1b7al6P50iRk9QfWhquOCInQPNV53qQ2ObVPy96NH8P2yiyXMU/L3o0XzVuV7c+9PCEG2kkDD70jXHyoFjUodTZjhD93mKtBmfzFYnbZjxAVrGPThFTZYYQCfKmW0fEyxgmzRRgnPUZIs19sjANhlDF2CbiOY7R0Uq3qAKe7te/ktWt6Gfe88kj4ei1RV8kMHV1UESdnVl8XmJ5Y3/nT/IWJu89csYyzf+G+N5V/p4fhM87ob7AAAAAElFTkSuQmCC"/>resume
                                 </a>
                             </li>
