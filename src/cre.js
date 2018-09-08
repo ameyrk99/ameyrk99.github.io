@@ -122,8 +122,8 @@ const git = (
                     <div className="col-lg-5">
                         <h4>Projects</h4><br /><br />
                         <p className="card-text">
-                            <a href="https://github.com/ameyrk99/whatsapp-parser" target="_blank">
-                                <u>whatsapp-parser</u>
+                            <a href="https://github.com/ameyrk99/whatsapp-visualizer" target="_blank">
+                                <u>whatsapp-visualizer</u>
                             </a> - Analyze whatsapp messages and graph the statistics.
                                     <br />
                             <br />
