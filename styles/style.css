@@ -130,3 +130,33 @@ li {
     color: #ffffff;
     border: 2px solid #ffffff;
 }
+
+.imgStyle {
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.headerStyles {
+    font-size: 80%
+}
+
+.styleWhite {
+    color: white
+}
+
+.styleMat {
+    color: white;
+    background: #ff3300
+}
+
+.stylePy {
+    background: #4584b6;
+    color: #ffde57
+}
+
+.styleMavs {
+    background: #ffde57;
+    color: #4584b6
+}
