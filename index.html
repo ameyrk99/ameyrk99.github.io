@@ -29,524 +29,574 @@
 </head>
 
 <body>
+    <!-- Container -->
     <div class="container" style="padding-top: 1.5%">
+
+        <!-- Jumbotron -->
         <div class="jumbotron">
+
+            <!-- Header and navbar -->
             <div class="row">
-                <div class="col-lg-2">
-                    <h3>Hello, World!</h3>
-                    <h5>- Amey Khairnar</h5>
-                    <br><br>
+                <div class="col-lg-8">
+                    <div>
+                        <h1>Hello, there! I'm Amey Khairnar</h1><br>
+                    </div>
+                </div>
 
+                <!-- Navbar  -->
+                <div class="col-lg-4">
                     <!-- Buttons -->
-                    <div class="col-lg-12">
-                        <button class="btn" onclick="toggleCard('home')" id="btn_home">Home</button>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="dropdown">
-                            <button class="btn btn_projects dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Projects
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <button class="btn dropdown-item" id="btn_yaca"
-                                    onclick="toggleCard('yaca')">YACA</button>
-                                <button class="btn dropdown-item" id="btn_ahunt"
-                                    onclick="toggleCard('ahunt')">AHunt</button>
-                                <button class="btn dropdown-item" id="btn_whatsvis"
-                                    onclick="toggleCard('whatsvis')">WhatsVis</button>
-                                <button class="btn dropdown-item" id="btn_dvdts"
-                                    onclick="toggleCard('dvdts')">DVDTS</button>
-                                <button class="btn dropdown-item" id="btn_minipage"
-                                    onclick="toggleCard('minipage')">Minipage</button>
-                                <button class="btn dropdown-item" id="btn_pymavs" onclick="toggleCard('pymavs')">PyMavs
-                                    Blog</button>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <button class="btn" onclick="toggleCard('home')" id="btn_home">Home</button>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="dropdown">
+                                <button class="btn btn_projects dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Projects
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <button class="btn dropdown-item" id="btn_yaca"
+                                        onclick="toggleCard('yaca')">YACA</button>
+                                    <button class="btn dropdown-item" id="btn_ahunt"
+                                        onclick="toggleCard('ahunt')">AHunt</button>
+                                    <button class="btn dropdown-item" id="btn_whatsvis"
+                                        onclick="toggleCard('whatsvis')">WhatsVis</button>
+                                    <button class="btn dropdown-item" id="btn_dvdts"
+                                        onclick="toggleCard('dvdts')">DVDTS</button>
+                                    <button class="btn dropdown-item" id="btn_minipage"
+                                        onclick="toggleCard('minipage')">Minipage</button>
+                                    <button class="btn dropdown-item" id="btn_pymavs"
+                                        onclick="toggleCard('pymavs')">PyMavs
+                                        Blog</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- <div class="col-lg-12">
-                        <button class="btn" onclick="toggleCard('sketches')" id="btn_sketches">Sketches</button>
-                    </div> -->
-                    <div class="col-lg-12">
-                        <button class="btn" onclick="toggleCard('about')" id="btn_about">About</button>
+                        <!-- <div class="col-lg-12">
+                            <button class="btn" onclick="toggleCard('sketches')" id="btn_sketches">Sketches</button>
+                        </div> -->
+                        <!-- <div class="col-lg-4">
+                            <button class="btn" onclick="toggleCard('about')" id="btn_about">About</button>
+                        </div> -->
                     </div>
                 </div>
+                <!-- Navbar  -->
 
-                <div class="col-lg-10">
-                    <!-- Cards -->
-                    <div class="root col-lg-12" id="home">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-5">
-                                        <h2>Home</h2><br>
-                                        <p class="card-text">
-                                            Hi! I'm Amey, and I am a Computer Science student at the College of
-                                            Engineering at The University of Texas at Arlington.
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-7"><img class="imageStyle" src="images/uta.jpg"
-                                            alt="UTA photo" /></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- Sketches -->
-
-                    <!-- <div class="root col-lg-12" id="sketches">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-5">
-                                        <h2>Sketches</h2><br>
-                                        <p class="card-text">
-                                            I enjoy sketching a lot, and I mostly do fan-arts of the characters I love.
-                                            <br><br>
-                                            Check out my blog <a href="http://ameyrk.tumblr.com">here</a>.
-                                        </p><br><br>
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <div id="carouselSketchesIndicators" class="carousel slide"
-                                            data-ride="carousel">
-                                            <ol class="carousel-indicators">
-                                                <li data-target="#carouselSketchesIndicators" data-slide-to="3"
-                                                    class="active"></li>
-                                                <li data-target="#carouselSketchesIndicators" data-slide-to="1"></li>
-                                                <li data-target="#carouselSketchesIndicators" data-slide-to="2"></li>
-                                                <li data-target="#carouselSketchesIndicators" data-slide-to="3"></li>
-                                            </ol>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img class="d-block w-100" src="images/sketches/sketch_3.png"
-                                                        alt="First slide">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" src="images/sketches/sketch_2.png"
-                                                        alt="Second slide">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" src="images/sketches/sketch_1.png"
-                                                        alt="Third slide">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" src="images/sketches/sketch_4.png"
-                                                        alt="Fourth slide">
-                                                </div>
-                                            </div>
-                                            <a class="carousel-control-prev" href="#carouselSketchesIndicators"
-                                                role="button" data-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Previous</span>
-                                            </a>
-                                            <a class="carousel-control-next" href="#carouselSketchesIndicators"
-                                                role="button" data-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Next</span>
-                                            </a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- Sketches -->
-
-                    <!-- Projects -->
-
-                    <!-- YACA -->
-                    <div class="root col-lg-12" id="yaca">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-5">
-                                        <h2>YACA</h2><br>
-                                        <p class="card-text">
-                                            YACA is a calendar app aimed towards college students. <br>
-
-                                            It is very minimal and to the point of improving prodcutivity and helping
-                                            manage time. <br><br>
-
-                                            Some of its features are split home view that lets one see events for
-                                            selected day,
-                                            overview screen that lets one see all events from current date,
-                                            color marking events and classes to better distinguish them, and
-                                            notepad screen to take quick notes.
-                                            <br><br>
-                                            <img src="./icons/react-native-filled.png">
-                                            <img src="./icons/javascript.png">
-                                            <img src="./icons/firebase.png">
-
-                                            <a href="https://ameyrk99.github.io/yaca/" target="_blank"
-                                                rel="noopener noreferrer">
-                                                <img src="./icons/internet.png"
-                                                    style="margin-left: 30%">
-                                            </a>
-
-                                            <a href="https://github.com/ameyrk99/yaca" target="_blank"
-                                                rel="noopener noreferrer">
-                                                <img src="./icons/github.png">
-                                            </a>
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-7">
-
-                                        <div id="carouselYACAIndicators" class="carousel slide" data-ride="carousel">
-                                            <ol class="carousel-indicators">
-                                                <li data-target="#carouselYACAIndicators" data-slide-to="0"
-                                                    class="active"></li>
-                                                <li data-target="#carouselYACAIndicators" data-slide-to="1"></li>
-                                                <li data-target="#carouselYACAIndicators" data-slide-to="2"></li>
-                                            </ol>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img class="d-block w-100" src="images/yaca/screenshot_0.png"
-                                                        style="height: 80%" alt="First yaca slide">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" src="images/yaca/screenshot_1.png"
-                                                        style="height: 80%" alt="Second yaca slide">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" src="images/yaca/screenshot_2.png"
-                                                        style="height: 80%" alt="Third yaca slide">
-                                                </div>
-                                            </div>
-                                            <a class="carousel-control-prev" href="#carouselYACAIndicators"
-                                                role="button" data-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Previous</span>
-                                            </a>
-                                            <a class="carousel-control-next" href="#carouselYACAIndicators"
-                                                role="button" data-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Next</span>
-                                            </a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Ahunt -->
-                    <div class="root col-lg-12" id="ahunt">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-5">
-                                        <h2>Ahunt</h2><br>
-                                        <p class="card-text">
-                                            "The purpose of AHunt is to aid scavenger hunts. Users will gather in one
-                                            area and will be given an initial
-                                            “hint” as to where the first part of the scavenger hunt will take place.
-                                            Each of the notable sites will have
-                                            strategic QR Codes placed around the area. A hint to the next step of the
-                                            scavenger hunt will be given if
-                                            that the user is able to find each location of and scan the previous QR
-                                            Codes." <br><br>
-                                            I mostly worked on the front-end part of the project. <br>
-
-                                            <img src="./icons/react.png">
-                                            <img src="./icons/javascript.png">
-                                            <img src="./icons/firebase.png">
-
-                                            <a href="https://kahunt-218617.firebaseapp.com/#/" target="_blank"
-                                                rel="noopener noreferrer">
-                                                <img src="./icons/internet.png"
-                                                    style="margin-left: 30%">
-                                            </a>
-
-                                            <a href="https://github.com/ameyrk99/ahunt" target="_blank"
-                                                rel="noopener noreferrer">
-                                                <img src="./icons/github.png">
-                                            </a>
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-7">
-
-                                        <div id="carouselAHuntIndicators" class="carousel slide" data-ride="carousel">
-                                            <ol class="carousel-indicators">
-                                                <li data-target="#carouselAHuntIndicators" data-slide-to="0"
-                                                    class="active"></li>
-                                                <li data-target="#carouselAHuntIndicators" data-slide-to="1"></li>
-                                                <li data-target="#carouselAHuntIndicators" data-slide-to="2"></li>
-                                                <li data-target="#carouselAHuntIndicators" data-slide-to="3"></li>
-                                                <li data-target="#carouselAHuntIndicators" data-slide-to="4"></li>
-                                            </ol>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img class="d-block w-100" src="images/ahunt/1.png"
-                                                        alt="First ahunt slide">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" src="images/ahunt/2.png"
-                                                        alt="Second ahunt slide">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" src="images/ahunt/3.png"
-                                                        alt="Third ahunt slide">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" src="images/ahunt/4.png"
-                                                        alt="Fourth ahunt slide">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" src="images/ahunt/5.png"
-                                                        alt="Fifth ahunt slide">
-                                                </div>
-                                            </div>
-                                            <a class="carousel-control-prev" href="#carouselAHuntIndicators"
-                                                role="button" data-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Previous</span>
-                                            </a>
-                                            <a class="carousel-control-next" href="#carouselAHuntIndicators"
-                                                role="button" data-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Next</span>
-                                            </a>
-                                        </div>
-                                        <br>
-                                        picture credits: Olivier Ndikumana
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- WhatsVis -->
-                    <div class="root col-lg-12" id="whatsvis">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-5">
-                                        <h2>WhatsVis</h2><br>
-                                        <p class="card-text">
-                                            I created this project just for fun. I wanted to see the statistics of one
-                                            of my group. <br><br>
-
-                                            The project lets you visualize things such as messages sent, words used,
-                                            and media sent for each user. One can also see top 10 used non-stop words
-                                            above length 3. <br>
-                                            There are two versions of the project. One uses python for parsing and
-                                            matplotlib to draw graphs. The other one (web app) uses JavaScript for
-                                            parsing and ChartJS to graph data. <br><br>
-                                            <img src="./icons/javascript.png">
-                                            <img src="./icons/python.png">
-                                            <img src="./icons/area-chart.png">
-
-                                            <a href="https://ameyrk99.github.io/whatsapp-visualizer/" target="_blank"
-                                                rel="noopener noreferrer">
-                                                <img src="./icons/internet.png"
-                                                    style="margin-left: 30%">
-                                            </a>
-
-                                            <a href="https://github.com/ameyrk99/whatsapp-visualizer" target="_blank"
-                                                rel="noopener noreferrer">
-                                                <img src="./icons/github.png">
-                                            </a>
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-7">
-
-                                        <div id="carouselWhatsVisIndicators" class="carousel slide"
-                                            data-ride="carousel">
-                                            <ol class="carousel-indicators">
-                                                <li data-target="#carouselWhatsVisIndicators" data-slide-to="0"
-                                                    class="active"></li>
-                                                <li data-target="#carouselWhatsVisIndicators" data-slide-to="1"></li>
-                                                <li data-target="#carouselWhatsVisIndicators" data-slide-to="2"></li>
-                                            </ol>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img class="d-block w-100" src="images/whatsvis/part_1.png"
-                                                        alt="First ahunt slide">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" src="images/whatsvis/part_2.png"
-                                                        alt="Second ahunt slide">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" src="images/whatsvis/part_3.png"
-                                                        alt="Third ahunt slide">
-                                                </div>
-                                            </div>
-                                            <a class="carousel-control-prev" href="#carouselWhatsVisIndicators"
-                                                role="button" data-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Previous</span>
-                                            </a>
-                                            <a class="carousel-control-next" href="#carouselWhatsVisIndicators"
-                                                role="button" data-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Next</span>
-                                            </a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- DVDTS -->
-                    <div class="root col-lg-12" id="dvdts">
-                        <div class="card">
-                            <div class="card-body">
-                                <!-- <div class="row"> -->
-                                <!-- <div class="col-lg-5"> -->
-                                <h2>Minipage</h2><br>
-
-                                <p class="card-text">
-                                    I made this homepage for me after getting tired of looking for minimalistic
-                                    homepages. <br>
-                                    I also made it so that it saves me a lot of time at searching by using searchbar in
-                                    various ways.
-                                    <br>
-                                    <img src="./icons/golang.png">
-
-                                    <a href="https://github.com/ameyrk99/dvdts" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <img src="./icons/github.png"
-                                            style="margin-left: 30%">
-                                    </a>
-                                </p>
-                                <!-- </div> -->
-                                <!-- <div class="col-lg-7"> -->
-
-                                <img class="imageStyle" src="images/dvdts.gif" alt="DVDTS Demo gif">
-
-                                <br>Gif is laggy. Check <a href="https://raw.githubusercontent.com/ameyrk99/dvdts/master/readme_assets/dvdts.mp4" target="_blank" rel="noopener noreferrer">video</a>.
-                                <!-- </div> -->
-                                <!-- </div> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- MiniPage -->
-                    <div class="root col-lg-12" id="minipage">
-                        <div class="card">
-                            <div class="card-body">
-                                <!-- <div class="row"> -->
-                                <!-- <div class="col-lg-5"> -->
-                                <h2>Minipage</h2><br>
-
-                                <p class="card-text">
-                                    I made this homepage for me after getting tired of looking for minimalistic
-                                    homepages. <br>
-                                    I also made it so that it saves me a lot of time at searching by using searchbar in
-                                    various ways.
-                                    <br>
-                                    <img src="./icons/javascript.png">
-
-                                    <a href="https://ameyrk99.github.io/minipage/" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <img src="./icons/internet.png"
-                                            style="margin-left: 30%">
-                                    </a>
-
-                                    <a href="https://github.com/ameyrk99/minipage" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <img src="./icons/github.png">
-                                    </a>
-                                </p>
-                                <!-- </div> -->
-                                <!-- <div class="col-lg-7"> -->
-
-                                <img class="imageStyle" src="images/minipage.gif" alt="Minipage Demo gif">
-
-                                <!-- </div> -->
-                                <!-- </div> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- PyMavs Blog -->
-                    <div class="root col-lg-12" id="pymavs">
-                        <div class="card">
-                            <div class="card-body">
-                                <!-- <div class="row"> -->
-                                <!-- <div class="col-lg-5"> -->
-                                <h2>Life of Py - PyMavs Blog</h2><br>
-
-                                <p class="card-text">
-                                    As a webmaster for the organization at UTA, I created this blog website for PyMavs.
-                                    <br>
-                                    It uses markdown files to create new pages and is made using GatsbyJS and ReactJS.
-                                    <br>
-                                    <img src="./icons/react.png">
-                                    <img src="./icons/javascript.png">
-
-                                    <a href="https://pymavs.github.io/blog/" target="_blank" rel="noopener noreferrer">
-                                        <img src="./icons/internet.png"
-                                            style="margin-left: 30%">
-                                    </a>
-
-                                    <a href="https://github.com/PyMavs/blog" target="_blank" rel="noopener noreferrer">
-                                        <img src="./icons/github.png">
-                                    </a>
-                                </p>
-                                <!-- </div> -->
-                                <!-- <div class="col-lg-7"> -->
-
-                                <img class="imageStyle" src="images/pymavsblog.png" alt="PyMavs Blog">
-
-                                <!-- </div> -->
-                                <!-- </div> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="root col-lg-12" id="about">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <h4>Connect with me:</h4><br>
-
-                                        <ul class="list-unstyled" id="social">
-                                            <li>
-                                                <a href="https://github.com/ameyrk99/" target="_blank">
-                                                    <img src="./icons/github.png">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.instagram.com/ameykhairnar99/" target="_blank">
-                                                    <img src="./icons/instagram.png">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.linkedin.com/in/ameyrk/" target="_blank">
-                                                    <img src="./icons/linkedin.png">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="mailto:ameykhairnar99@gmail.com" target="_blank">
-                                                    <img src="./icons/email-sign.png">
-                                                </a>
-                                            </li><br><br>
-                                            <li>and, check out my <br>
-                                                <a href="resume.pdf" target="_blank">
-                                                    <img src="./icons/pdf.png">resume
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-lg-8"><img class="imageStyle" src="images/connect.jpg"
-                                            alt="LAN party photo" /></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
             </div>
+            <!-- Header and navbar -->
+
+            <!-- Cards -->
+            <div>
+
+                <!-- Home -->
+                <div class="root col-lg-12" id="home">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-5 home">
+                                    <p class="card-text home">
+                                        Hi! I'm Amey, and I am doing B.S. in Computer Science & minor in Mathematics
+                                        at the University of Texas at Arlington, Class 2021.
+                                    </p><br><br>
+
+                                    Connect with me: <br><br>
+
+                                    <ul class="list-unstyled" id="social">
+                                        <li>
+                                            <a href="https://github.com/ameyrk99/" target="_blank">
+                                                <img src="./icons/github.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/ameyrk/" target="_blank">
+                                                <img src="./icons/linkedin.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:ameykhairnar99@gmail.com" target="_blank">
+                                                <img src="./icons/email-sign.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/ameykhairnar99/" target="_blank">
+                                                <img src="./icons/instagram.png">
+                                            </a>
+                                        </li><br><br>
+                                        <li>and, check out my
+                                            <a href="resume.pdf" target="_blank">
+                                                <img src="./icons/pdf.png">resume
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-7"><img class="imageStyle" src="images/uta.jpg" alt="UTA photo" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Home -->
+
+                <!-- Sketches -->
+                <!-- <div class="root col-lg-12" id="sketches">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <h2>Sketches</h2><br>
+                                    <p class="card-text">
+                                        I enjoy sketching a lot, and I mostly do fan-arts of the characters I love.
+                                        <br><br>
+                                        Check out my blog <a href="http://ameyrk.tumblr.com">here</a>.
+                                    </p><br><br>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div id="carouselSketchesIndicators" class="carousel slide"
+                                        data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselSketchesIndicators" data-slide-to="3"
+                                                class="active"></li>
+                                            <li data-target="#carouselSketchesIndicators" data-slide-to="1"></li>
+                                            <li data-target="#carouselSketchesIndicators" data-slide-to="2"></li>
+                                            <li data-target="#carouselSketchesIndicators" data-slide-to="3"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="d-block w-100" src="images/sketches/sketch_3.png"
+                                                    alt="First slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/sketches/sketch_2.png"
+                                                    alt="Second slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/sketches/sketch_1.png"
+                                                    alt="Third slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/sketches/sketch_4.png"
+                                                    alt="Fourth slide">
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselSketchesIndicators"
+                                            role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselSketchesIndicators"
+                                            role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Sketches -->
+
+                <!-- Projects -->
+
+                <!-- YACA -->
+                <div class="root col-lg-12" id="yaca">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <h2>YACA</h2><br>
+                                    <p class="card-text">
+                                        YACA is a calendar app aimed towards college students. <br>
+
+                                        It is very minimal and to the point of improving prodcutivity and helping
+                                        manage time. <br><br>
+
+                                        Some of its features are split home view that lets one see events for
+                                        selected day,
+                                        overview screen that lets one see all events from current date,
+                                        color marking events and classes to better distinguish them, and
+                                        notepad screen to take quick notes.
+                                        <br><br>
+                                        <img src="./icons/react-native-filled.png">
+                                        <img src="./icons/javascript.png">
+                                        <img src="./icons/firebase.png">
+
+                                        <a href="https://ameyrk99.github.io/yaca/" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="./icons/internet.png" style="margin-left: 30%">
+                                        </a>
+
+                                        <a href="https://github.com/ameyrk99/yaca" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="./icons/github.png">
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-lg-7">
+
+                                    <div id="carouselYACAIndicators" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselYACAIndicators" data-slide-to="0" class="active">
+                                            </li>
+                                            <li data-target="#carouselYACAIndicators" data-slide-to="1"></li>
+                                            <li data-target="#carouselYACAIndicators" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="d-block w-100" src="images/yaca/screenshot_0.png"
+                                                    style="height: 80%" alt="First yaca slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/yaca/screenshot_1.png"
+                                                    style="height: 80%" alt="Second yaca slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/yaca/screenshot_2.png"
+                                                    style="height: 80%" alt="Third yaca slide">
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselYACAIndicators" role="button"
+                                            data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselYACAIndicators" role="button"
+                                            data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- YACA -->
+
+                <!-- Ahunt -->
+                <div class="root col-lg-12" id="ahunt">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <h2>Ahunt</h2><br>
+                                    <p class="card-text">
+                                        "The purpose of AHunt is to aid scavenger hunts. Users will gather in one
+                                        area and will be given an initial
+                                        “hint” as to where the first part of the scavenger hunt will take place.
+                                        Each of the notable sites will have
+                                        strategic QR Codes placed around the area. A hint to the next step of the
+                                        scavenger hunt will be given if
+                                        that the user is able to find each location of and scan the previous QR
+                                        Codes." <br><br>
+                                        I mostly worked on the front-end part of the project. <br>
+
+                                        <img src="./icons/react.png">
+                                        <img src="./icons/javascript.png">
+                                        <img src="./icons/firebase.png">
+
+                                        <a href="https://kahunt-218617.firebaseapp.com/#/" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="./icons/internet.png" style="margin-left: 30%">
+                                        </a>
+
+                                        <a href="https://github.com/ameyrk99/ahunt" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="./icons/github.png">
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-lg-7">
+
+                                    <div id="carouselAHuntIndicators" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselAHuntIndicators" data-slide-to="0" class="active">
+                                            </li>
+                                            <li data-target="#carouselAHuntIndicators" data-slide-to="1"></li>
+                                            <li data-target="#carouselAHuntIndicators" data-slide-to="2"></li>
+                                            <li data-target="#carouselAHuntIndicators" data-slide-to="3"></li>
+                                            <li data-target="#carouselAHuntIndicators" data-slide-to="4"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="d-block w-100" src="images/ahunt/1.png"
+                                                    alt="First ahunt slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/ahunt/2.png"
+                                                    alt="Second ahunt slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/ahunt/3.png"
+                                                    alt="Third ahunt slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/ahunt/4.png"
+                                                    alt="Fourth ahunt slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/ahunt/5.png"
+                                                    alt="Fifth ahunt slide">
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselAHuntIndicators" role="button"
+                                            data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselAHuntIndicators" role="button"
+                                            data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    <br>
+                                    picture credits: Olivier Ndikumana
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ahunt -->
+
+                <!-- WhatsVis -->
+                <div class="root col-lg-12" id="whatsvis">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <h2>WhatsVis</h2><br>
+                                    <p class="card-text">
+                                        I created this project just for fun. I wanted to see the statistics of one
+                                        of my group. <br><br>
+
+                                        The project lets you visualize things such as messages sent, words used,
+                                        and media sent for each user. One can also see top 10 used non-stop words
+                                        above length 3. <br>
+                                        There are two versions of the project. One uses python for parsing and
+                                        matplotlib to draw graphs. The other one (web app) uses JavaScript for
+                                        parsing and ChartJS to graph data. <br><br>
+                                        <img src="./icons/javascript.png">
+                                        <img src="./icons/python.png">
+                                        <img src="./icons/area-chart.png">
+
+                                        <a href="https://ameyrk99.github.io/whatsapp-visualizer/" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="./icons/internet.png" style="margin-left: 30%">
+                                        </a>
+
+                                        <a href="https://github.com/ameyrk99/whatsapp-visualizer" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <img src="./icons/github.png">
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-lg-7">
+
+                                    <div id="carouselWhatsVisIndicators" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselWhatsVisIndicators" data-slide-to="0"
+                                                class="active"></li>
+                                            <li data-target="#carouselWhatsVisIndicators" data-slide-to="1"></li>
+                                            <li data-target="#carouselWhatsVisIndicators" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="d-block w-100" src="images/whatsvis/part_1.png"
+                                                    alt="First ahunt slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/whatsvis/part_2.png"
+                                                    alt="Second ahunt slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/whatsvis/part_3.png"
+                                                    alt="Third ahunt slide">
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselWhatsVisIndicators"
+                                            role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselWhatsVisIndicators"
+                                            role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- WhatsVis -->
+
+                <!-- DVDTS -->
+                <div class="root col-lg-12" id="dvdts">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- <div class="row"> -->
+                            <!-- <div class="col-lg-5"> -->
+                            <h2>DVDTS</h2><br>
+
+                            <p class="card-text">
+                                I made this homepage for me after getting tired of looking for minimalistic
+                                homepages. <br>
+                                I also made it so that it saves me a lot of time at searching by using searchbar in
+                                various ways.
+                                <br>
+                                <img src="./icons/golang.png">
+
+                                <a href="https://github.com/ameyrk99/dvdts" target="_blank" rel="noopener noreferrer">
+                                    <img src="./icons/github.png" style="margin-left: 30%">
+                                </a>
+                            </p>
+                            <!-- </div> -->
+                            <!-- <div class="col-lg-7"> -->
+
+                            <img class="imageStyle" src="images/dvdts.gif" alt="DVDTS Demo gif">
+
+                            <br>Gif is laggy. Check <a
+                                href="https://raw.githubusercontent.com/ameyrk99/dvdts/master/readme_assets/dvdts.mp4"
+                                target="_blank" rel="noopener noreferrer">video</a>.
+                            <!-- </div> -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- DVDTS -->
+
+                <!-- MiniPage -->
+                <div class="root col-lg-12" id="minipage">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- <div class="row"> -->
+                            <!-- <div class="col-lg-5"> -->
+                            <h2>Minipage</h2><br>
+
+                            <p class="card-text">
+                                I made this homepage for me after getting tired of looking for minimalistic
+                                homepages. <br>
+                                I also made it so that it saves me a lot of time at searching by using searchbar in
+                                various ways.
+                                <br>
+                                <img src="./icons/javascript.png">
+
+                                <a href="https://ameyrk99.github.io/minipage/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img src="./icons/internet.png" style="margin-left: 30%">
+                                </a>
+
+                                <a href="https://github.com/ameyrk99/minipage" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img src="./icons/github.png">
+                                </a>
+                            </p>
+                            <!-- </div> -->
+                            <!-- <div class="col-lg-7"> -->
+
+                            <img class="imageStyle" src="images/minipage.gif" alt="Minipage Demo gif">
+
+                            <!-- </div> -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- MiniPage -->
+
+                <!-- PyMavs Blog -->
+                <div class="root col-lg-12" id="pymavs">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- <div class="row"> -->
+                            <!-- <div class="col-lg-5"> -->
+                            <h2>Life of Py - PyMavs Blog</h2><br>
+
+                            <p class="card-text">
+                                As a webmaster for the organization at UTA, I created this blog website for PyMavs.
+                                <br>
+                                It uses markdown files to create new pages and is made using GatsbyJS and ReactJS.
+                                <br>
+                                <img src="./icons/react.png">
+                                <img src="./icons/javascript.png">
+
+                                <a href="https://pymavs.github.io/blog/" target="_blank" rel="noopener noreferrer">
+                                    <img src="./icons/internet.png" style="margin-left: 30%">
+                                </a>
+
+                                <a href="https://github.com/PyMavs/blog" target="_blank" rel="noopener noreferrer">
+                                    <img src="./icons/github.png">
+                                </a>
+                            </p>
+                            <!-- </div> -->
+                            <!-- <div class="col-lg-7"> -->
+
+                            <img class="imageStyle" src="images/pymavsblog.png" alt="PyMavs Blog">
+
+                            <!-- </div> -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- PyMavs Blog -->
+
+                <!-- About -->
+                <!-- <div class="root col-lg-12" id="about">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <h4>Connect with me:</h4><br>
+
+                                    <ul class="list-unstyled" id="social">
+                                        <li>
+                                            <a href="https://github.com/ameyrk99/" target="_blank">
+                                                <img src="./icons/github.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/ameyrk/" target="_blank">
+                                                <img src="./icons/linkedin.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:ameykhairnar99@gmail.com" target="_blank">
+                                                <img src="./icons/email-sign.png">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/ameykhairnar99/" target="_blank">
+                                                <img src="./icons/instagram.png">
+                                            </a>
+                                        </li><br><br>
+                                        <li>and, check out my
+                                            <a href="resume.pdf" target="_blank">
+                                                <img src="./icons/pdf.png">resume
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-8"><img class="imageStyle" src="images/connect.jpg"
+                                        alt="LAN party photo" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- About -->
+            </div>
+            <!-- Cards -->
+
         </div>
+        <!-- Jumbotron -->
+
     </div>
+    <!-- Container -->
 
     <script>
         function toggleCard(card_id) {
@@ -557,7 +607,7 @@
             $('#' + card_id).slideToggle();
             $('#btn_' + card_id).toggleClass('btn-primary active');
 
-            if (card_id !== "home" && card_id !== "about" && card_id !== "sketches") {
+            if (card_id !== "home" && card_id !== "sketches") {
                 $('.btn_projects').addClass("btn-secondary");
             }
         }

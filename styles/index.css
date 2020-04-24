@@ -20,3 +20,11 @@ ul#social li {
 div.root{
     display: none;
 }
+
+p.card-text {
+    font-size: medium;
+}
+
+div.home, p.home {
+    font-size: larger;
+}
