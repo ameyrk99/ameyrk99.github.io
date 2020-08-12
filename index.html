@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 
-<head> <!-- {{{1 -->
+<head>
+    <!-- {{{1 -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Amey Khairnar</title>
@@ -29,73 +30,59 @@
 </head> <!-- }}}1 -->
 
 <body>
+    <!-- Header and navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="col text-left">
+            <a class="navbar-brand btn" onclick="toggleCard('home')">Amey Khairnar</a>
+        </div>
+        <div class="col collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown show">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="true">Projects</a>
+                    <div class="dropdown-menu">
+                        <a class="btn dropdown-item" onclick="toggleCard('dvdts')">DVDTS</a>
+                        <a class="btn dropdown-item" onclick="toggleCard('yaca')">YACA</a>
+                        <a class="btn dropdown-item" onclick="toggleCard('ahunt')">AHunt</a>
+                        <a class="btn dropdown-item" onclick="toggleCard('whatsvis')">WhatsVis</a>
+                        <a class="btn dropdown-item" onclick="toggleCard('minipage')">Minipage</a>
+                        <a class="btn dropdown-item" onclick="toggleCard('pymavs')">PyMavs Blog</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://badreads.ameyrk.me">BADREADS</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav align-items-end">
+            </ul>
+        </div>
+        <div class="col text-right d-md-none">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- Header and navbar -->
+
     <!-- Container {{{1 -->
     <div class="container" style="padding-top: 1.5%">
 
         <!-- Jumbotron -->
         <div class="jumbotron">
 
-            <!-- Header and navbar -->
-            <div class="row">
-                <div class="col-lg-8">
-                    <div>
-                        <h1>Hello, there! I'm Amey Khairnar</h1><br>
-                    </div>
-                </div>
-
-                <!-- Navbar {{{  -->
-                <div class="col-lg-4">
-                    <!-- Buttons -->
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <button class="btn" onclick="toggleCard('home')" id="btn_home">Home</button>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="dropdown">
-                                <button class="btn btn_projects dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Projects
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <button class="btn dropdown-item" id="btn_yaca"
-                                        onclick="toggleCard('yaca')">YACA</button>
-                                    <button class="btn dropdown-item" id="btn_ahunt"
-                                        onclick="toggleCard('ahunt')">AHunt</button>
-                                    <button class="btn dropdown-item" id="btn_whatsvis"
-                                        onclick="toggleCard('whatsvis')">WhatsVis</button>
-                                    <button class="btn dropdown-item" id="btn_dvdts"
-                                        onclick="toggleCard('dvdts')">DVDTS</button>
-                                    <button class="btn dropdown-item" id="btn_minipage"
-                                        onclick="toggleCard('minipage')">Minipage</button>
-                                    <button class="btn dropdown-item" id="btn_pymavs"
-                                        onclick="toggleCard('pymavs')">PyMavs
-                                        Blog</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="col-lg-12">
-                            <button class="btn" onclick="toggleCard('sketches')" id="btn_sketches">Sketches</button>
-                        </div> -->
-                        <!-- <div class="col-lg-4">
-                            <button class="btn" onclick="toggleCard('about')" id="btn_about">About</button>
-                        </div> -->
-                    </div>
-                </div>
-                <!-- }}} Navbar  -->
-
-            </div>
-            <!-- Header and navbar -->
 
             <!-- Cards -->
             <div>
-            <!-- Home {{{ -->
+                <!-- Home {{{ -->
                 <div class="root col-lg-12" id="home">
                     <div class="card">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-5 home">
                                     <p class="card-text home">
-                                        Hi! I'm Amey, and I am doing Bachelor's in Computer Science & minor in Mathematics
+                                        Hi! I'm Amey, and I am doing Bachelor's in Computer Science & minor in
+                                        Mathematics
                                         at the University of Texas at Arlington, class 2021.
                                     </p><br><br>
 
@@ -137,9 +124,9 @@
                 </div>
                 <!-- }}} Home -->
 
-                  <!-- Projects {{{ -->
+                <!-- Projects {{{ -->
 
-                  <!-- YACA {{{ -->
+                <!-- YACA {{{ -->
                 <div class="root col-lg-12" id="yaca">
                     <div class="card">
                         <div class="card-body">
@@ -215,7 +202,7 @@
                 </div>
                 <!-- }}} YACA -->
 
-                  <!-- Ahunt {{{ -->
+                <!-- Ahunt {{{ -->
                 <div class="root col-lg-12" id="ahunt">
                     <div class="card">
                         <div class="card-body">
@@ -302,7 +289,7 @@
                 </div>
                 <!-- }}} Ahunt -->
 
-                  <!-- WhatsVis {{{ -->
+                <!-- WhatsVis {{{ -->
                 <div class="root col-lg-12" id="whatsvis">
                     <div class="card">
                         <div class="card-body">
@@ -376,7 +363,7 @@
                 </div>
                 <!--  }}} WhatsVis -->
 
-                  <!-- DVDTS {{{ -->
+                <!-- DVDTS {{{ -->
                 <div class="root col-lg-12" id="dvdts">
                     <div class="card">
                         <div class="card-body">
@@ -410,7 +397,7 @@
                 </div>
                 <!-- DVDTS }}} -->
 
-                  <!-- MiniPage {{{ -->
+                <!-- MiniPage {{{ -->
                 <div class="root col-lg-12" id="minipage">
                     <div class="card">
                         <div class="card-body">
@@ -447,7 +434,7 @@
                 </div>
                 <!-- }}} MiniPage -->
 
-                  <!-- PyMavs Blog {{{ -->
+                <!-- PyMavs Blog {{{ -->
                 <div class="root col-lg-12" id="pymavs">
                     <div class="card">
                         <div class="card-body">
@@ -492,24 +479,18 @@
     </div>
     <!-- Container }}}1 -->
 
-    <script> <!-- {{{1 -->
-        function toggleCard(card_id) {
+    <!-- {{{ JQ Script -->
+    <script>
+        function toggleCard(cardId) {
             $('.root').slideUp();
-            $('.btn').removeClass('btn-primary active');
-            $('.btn_projects').removeClass("btn-secondary")
-
-            $('#' + card_id).slideToggle();
-            $('#btn_' + card_id).toggleClass('btn-primary active');
-
-            if (card_id !== "home" && card_id !== "sketches") {
-                $('.btn_projects').addClass("btn-secondary");
-            }
+            $('#' + cardId).slideDown();
         }
 
         $(document).ready(
-            toggleCard("home")
+            toggleCard('home')
         )
-    </script> <!-- }}}1 -->
+    </script>
+    <!-- }}} -->
 </body>
 
 </html>
