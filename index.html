@@ -6,10 +6,276 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
 
     <title>Amey Khairnar</title>
+
+    <style>
+      #masonry-grid {
+        margin-left: -0.5rem;
+        width: auto;
+      }
+
+      .project-card {
+        user-select: none;
+        height: fit-content;
+        width: calc(33.333% - 16px);
+        margin: 0.5rem;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25); /* bottom-right shadow */
+        display: block;
+        transition: transform 0.2s;
+        cursor: grab;
+        /* max-width: 400px; */
+      }
+    </style>
   </head>
   <body>
-    <b>Portfolio Website</b>
+    <div class="container my-5">
+      <span class="d-inline-block text-start">
+        <h1>Hello there, I am Amey Khairnar</h1>
+        <span class="d-block text-end fst-italic text-muted"
+          ><h5>/a-MAY kh-AIR-nar/</h5></span
+        >
+      </span>
+
+      <div class="text-wrap my-5 fs-4">
+        <p>
+          <i
+            >I'm a software engineer, currently in my final year of MS Computer
+            Science at </i
+          ><b class="text-danger">Bridgewater State University</b>
+        </p>
+
+        <p>
+          <i>Before this, I worked at</i>
+          <b>Amazon Robotics</b
+          ><i> for three years as a Software Development Engineer</i>
+        </p>
+
+        <p>
+          <i>In 2021 I completed BS Computer Science from</i>
+          <b class="text-info">University of Texas at Arlington</b
+          ><i> during which I interned at </i><b class="text-danger">Lenovo</b>
+        </p>
+      </div>
+      <div>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a
+              class="btn btn-info"
+              href="https://www.linkedin.com/in/ameyrk/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="btn btn-primary"
+              href="https://github.com/ameyrk99"
+              target="_blank"
+              >Github</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="btn btn-outline-dark"
+              href="mailto:ameykhairnar99@gmail.com"
+              target="_blank"
+              >Email</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="btn btn-light"
+              href="assets/resume-amey_khairnar.pdf"
+              target="_blank"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <h2>Projects</h2>
+      <div class="my-3" id="masonry-grid">
+        <!-- Flux -->
+        <div id="project-flux" class="col card p-3 bg-warning project-card">
+          <div class="card-body">
+            <h3 class="card-title">Flux</h3>
+            <p class="card-text fs-5">
+              MacOS app that enables elaborate day planning and responsive
+              journaling to create enhanced positive and negative feedback
+              mechanisms than TODO lists.
+            </p>
+            <div class="d-flex justify-content-between">
+              <p class="text-body-secondary">
+                <i>Swift, SwiftUI</i>
+              </p>
+              <a href="http://ameyrk.me/Flux">ameyrk.me/Flux</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- LED Scoreboard -->
+        <div
+          id="project-leds"
+          class="col card p-3 bg-info text-white project-card"
+        >
+          <div class="card-body">
+            <h3 class="card-title">LED Scoreboard</h3>
+            <p class="card-text fs-5">
+              A RaspberryPI powered LED scoreboard decoration for folks who love
+              sports. Displays live scores from favorite teams from NHL, NBA,
+              MLB, LaLiga.
+            </p>
+            <div class="d-flex justify-content-between">
+              <p class="text-white">
+                <i>RaspberryPI, Python</i>
+              </p>
+              <a class="text-white" href="https://srdesignledboard.github.io/"
+                >srdesignledboard.github.io</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- YReads -->
+        <div
+          id="project-yreads"
+          class="col card p-3 bg-danger text-white project-card"
+        >
+          <div class="card-body">
+            <h3 class="card-title">YReads</h3>
+            <p class="card-text fs-5">
+              Personal blog and database tracker for books that I read including
+              markdown support and basic reading statistics.
+            </p>
+            <div class="d-flex justify-content-between">
+              <p class="text-white">
+                <i>Typescript, Google Firebase, Python, Flask, Heroku</i>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- WhatsApp Visualizer -->
+        <div
+          id="project-whatsvis"
+          class="col card p-3 bg-success text-white project-card"
+        >
+          <div class="card-body">
+            <h3 class="card-title">WhatsApp Visualizer</h3>
+            <p class="card-text fs-5">
+              Visualization of WhatsApp chat &mdash; distributions of chat
+              messages, media, and words as well as chat frequencies over a day
+              and several weeks.
+            </p>
+            <div class="d-flex justify-content-between">
+              <p class="text-white">
+                <i>JavaScript, Chart.JS</i>
+              </p>
+              <a
+                class="text-white"
+                href="https://github.com/ameyrk99/whatsapp-visualizer"
+                >Github/whatsapp-visualizer</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- DVDTS -->
+        <div
+          id="project-flux"
+          class="col card p-3 bg-primary text-white project-card"
+        >
+          <div class="card-body">
+            <h3 class="card-title">DVDTS</h3>
+            <p class="card-text fs-5">
+              A terminal screensaver like the DVD logo one. Uses either
+              distro/OS name by default or custom text that supports piped
+              input.
+            </p>
+            <div class="d-flex justify-content-between">
+              <p class="text-white">
+                <i>Go</i>
+              </p>
+              <a class="text-white" href="https://github.com/ameyrk99/dvdts"
+                >Github/dvdts</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- YACA -->
+        <div id="project-yaca" class="col card p-3 bg-light project-card">
+          <div class="card-body">
+            <h3 class="card-title">Yet Another Calendar App</h3>
+            <p class="card-text fs-5">
+              A minimal calendar and time management android app.
+            </p>
+            <div class="d-flex justify-content-between">
+              <p class="text-body-secondary">
+                <i>JavaScript, React Native, Firebase</i>
+              </p>
+              <a href="https://github.com/ameyrk99/yaca">Github/yaca</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Health Tracker -->
+        <div id="project-ht" class="col card p-3 bg-warning project-card">
+          <div class="card-body">
+            <h3 class="card-title">Health Tracker</h3>
+            <p class="card-text fs-5">
+              An analysis of various health data such as sleep, water & caffeine
+              intake and steps over the last semester of my Bachelor's.
+            </p>
+            <div class="d-flex justify-content-between">
+              <p class="text-body-secondary">
+                <i>Python, Matplotlib</i>
+              </p>
+              <a href="https://ameyrk.me/tracker/">ameyrk.me/tracker/</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PyMavs Blog -->
+        <div
+          id="project-lop"
+          class="col card p-3 bg-info text-white project-card"
+        >
+          <div class="card-body">
+            <h3 class="card-title">Life of Py</h3>
+            <p class="card-text fs-5">
+              A blog website made for PyMavs - a Python organization at UTA.
+            </p>
+            <div class="d-flex justify-content-between">
+              <p class="text-white">
+                <i>GatsbyJS, ReactJS</i>
+              </p>
+              <a class="text-white" href="https://github.com/PyMavs/blog"
+                >Github/PyMavs/blog</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- End of project cards -->
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll(".project-card").forEach((card) => {
+        const angle = Math.random() * 4 - 1;
+        card.style.transform = `rotate(${angle}deg)`;
+      });
+
+      new Masonry("#masonry-grid", {
+        itemSelector: ".project-card",
+        columnWidth: ".project-card",
+        percentPosition: true,
+      });
+    </script>
   </body>
 </html>
