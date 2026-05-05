@@ -19,13 +19,24 @@
       .project-card {
         user-select: none;
         height: fit-content;
-        width: calc(33.333% - 16px);
+        width: calc(100% - 1rem);
         margin: 0.5rem;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25); /* bottom-right shadow */
         display: block;
         transition: transform 0.2s;
         cursor: grab;
-        /* max-width: 400px; */
+      }
+
+      @media (min-width: 768px) {
+        .project-card {
+          width: calc(50% - 1rem);
+        }
+      }
+
+      @media (min-width: 992px) {
+        .project-card {
+          width: calc(33.333% - 1rem);
+        }
       }
     </style>
   </head>
@@ -38,24 +49,74 @@
         >
       </span>
 
+      <div class="progress my-4" style="height: 1.5rem;">
+        <div
+          class="progress-bar bg-info"
+          role="progressbar"
+          style="width: 31%;"
+          aria-valuenow="31"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          data-bs-toggle="tooltip"
+          title="UTA · 2017–2021"
+        ></div>
+        <div
+          class="progress-bar bg-danger"
+          role="progressbar"
+          style="width: 2%;"
+          aria-valuenow="2"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          data-bs-toggle="tooltip"
+          title="Lenovo · Jun–Jul 2020"
+        ></div>
+        <div
+          class="progress-bar bg-info"
+          role="progressbar"
+          style="width: 11%;"
+          aria-valuenow="11"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          data-bs-toggle="tooltip"
+          title="UTA · 2017–2021"
+        ></div>
+        <div
+          class="progress-bar bg-warning"
+          role="progressbar"
+          style="width: 33%;"
+          aria-valuenow="33"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          data-bs-toggle="tooltip"
+          title="Amazon Robotics · 2021–2024"
+        ></div>
+        <div
+          class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+          role="progressbar"
+          style="width: 23%;"
+          aria-valuenow="23"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          data-bs-toggle="tooltip"
+          title="BSU · 2024–2026"
+        ></div>
+      </div>
+
       <div class="text-wrap my-5 fs-4">
         <p>
-          <i
-            >I'm a software engineer, currently in my final year of MS Computer
-            Science at </i
-          ><b class="text-danger">Bridgewater State University</b>
+          I'm a software engineer, currently in my final year of MS Computer
+          Science at <b class="text-danger">Bridgewater State University</b>
         </p>
 
         <p>
-          <i>Before this, I worked at</i>
-          <b>Amazon Robotics</b
-          ><i> for three years as a Software Development Engineer</i>
+          Before this, I worked at <b>Amazon Robotics</b> for three years as a
+          Software Development Engineer
         </p>
 
         <p>
-          <i>In 2021 I completed BS Computer Science from</i>
-          <b class="text-info">University of Texas at Arlington</b
-          ><i> during which I interned at </i><b class="text-danger">Lenovo</b>
+          In 2021 I completed BS Computer Science from
+          <b class="text-info">University of Texas at Arlington</b> during which
+          I interned at <b class="text-danger">Lenovo</b>
         </p>
       </div>
       <div>
@@ -76,14 +137,6 @@
               >Github</a
             >
           </li>
-          <li class="nav-item">
-            <a
-              class="btn btn-outline-dark"
-              href="mailto:ameykhairnar99@gmail.com"
-              target="_blank"
-              >Email</a
-            >
-          </li>
         </ul>
       </div>
     </div>
@@ -94,12 +147,13 @@
         <!-- vimancer -->
         <div
           id="project-vimancer"
-          class="col card p-3 bg-success text-white project-card"
+          class="card p-3 bg-success text-white project-card"
         >
           <div class="card-body">
             <h3 class="card-title">Vimancer</h3>
             <p class="card-text fs-5">
-              A game to introduce the very basics of vim-like editors.
+              An educational game with reimagination of commands from Vim-like
+              editors as magic!
             </p>
             <div class="d-flex justify-content-between">
               <p class="text-white">
@@ -113,7 +167,7 @@
         </div>
 
         <!-- Flux -->
-        <div id="project-flux" class="col card p-3 bg-warning project-card">
+        <div id="project-flux" class="card p-3 bg-warning project-card">
           <div class="card-body">
             <h3 class="card-title">Flux</h3>
             <p class="card-text fs-5">
@@ -131,10 +185,7 @@
         </div>
 
         <!-- LED Scoreboard -->
-        <div
-          id="project-leds"
-          class="col card p-3 bg-info text-white project-card"
-        >
+        <div id="project-leds" class="card p-3 bg-info text-white project-card">
           <div class="card-body">
             <h3 class="card-title">LED Scoreboard</h3>
             <p class="card-text fs-5">
@@ -156,7 +207,7 @@
         <!-- YReads -->
         <div
           id="project-yreads"
-          class="col card p-3 bg-danger text-white project-card"
+          class="card p-3 bg-danger text-white project-card"
         >
           <div class="card-body">
             <h3 class="card-title">YReads</h3>
@@ -175,7 +226,7 @@
         <!-- WhatsApp Visualizer -->
         <div
           id="project-whatsvis"
-          class="col card p-3 bg-success text-white project-card"
+          class="card p-3 bg-success text-white project-card"
         >
           <div class="card-body">
             <h3 class="card-title">WhatsApp Visualizer</h3>
@@ -200,7 +251,7 @@
         <!-- DVDTS -->
         <div
           id="project-flux"
-          class="col card p-3 bg-primary text-white project-card"
+          class="card p-3 bg-primary text-white project-card"
         >
           <div class="card-body">
             <h3 class="card-title">DVDTS</h3>
@@ -220,7 +271,7 @@
         </div>
 
         <!-- YACA -->
-        <div id="project-yaca" class="col card p-3 bg-light project-card">
+        <div id="project-yaca" class="card p-3 bg-light project-card">
           <div class="card-body">
             <h3 class="card-title">Yet Another Calendar App</h3>
             <p class="card-text fs-5">
@@ -236,7 +287,7 @@
         </div>
 
         <!-- Health Tracker -->
-        <div id="project-ht" class="col card p-3 bg-warning project-card">
+        <div id="project-ht" class="card p-3 bg-warning project-card">
           <div class="card-body">
             <h3 class="card-title">Health Tracker</h3>
             <p class="card-text fs-5">
@@ -253,10 +304,7 @@
         </div>
 
         <!-- PyMavs Blog -->
-        <div
-          id="project-lop"
-          class="col card p-3 bg-info text-white project-card"
-        >
+        <div id="project-lop" class="card p-3 bg-info text-white project-card">
           <div class="card-body">
             <h3 class="card-title">Life of Py</h3>
             <p class="card-text fs-5">
@@ -278,6 +326,10 @@
     </div>
 
     <script>
+      document
+        .querySelectorAll('[data-bs-toggle="tooltip"]')
+        .forEach((el) => new bootstrap.Tooltip(el));
+
       document.querySelectorAll(".project-card").forEach((card) => {
         const angle = Math.random() * 4 - 1;
         card.style.transform = `rotate(${angle}deg)`;
