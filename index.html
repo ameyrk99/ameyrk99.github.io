@@ -21,10 +21,37 @@
         height: fit-content;
         width: calc(100% - 1rem);
         margin: 0.5rem;
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25); /* bottom-right shadow */
         display: block;
         transition: transform 0.2s;
         cursor: grab;
+      }
+
+      #masonry-grid .card,
+      #masonry-grid .project-polaroid {
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+      }
+
+      .project-polaroid {
+        background: #fafafa;
+        padding: 12px 12px 0;
+        border: 1px solid #ddd;
+      }
+
+      .project-pair > *:first-child {
+        margin-bottom: 1rem;
+      }
+
+      .polaroid-img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .polaroid-caption {
+        text-align: right;
+        padding: 14px 4px 18px 0;
+        font-size: 1.25rem;
+        color: #333;
       }
 
       @media (min-width: 768px) {
@@ -144,10 +171,19 @@
     <div class="container my-5">
       <h2>Projects</h2>
       <div class="my-3" id="masonry-grid">
-        <!-- vimancer -->
+        <!-- vimancer pair -->
+        <div class="project-card project-pair">
+          <div class="project-polaroid">
+            <img
+              class="polaroid-img"
+              src="assets/vimancer.gif"
+              alt="Vimancer"
+            />
+            <div class="polaroid-caption">Vimancer</div>
+          </div>
         <div
           id="project-vimancer"
-          class="card p-3 bg-success text-white project-card"
+          class="card p-3 bg-success text-white"
         >
           <div class="card-body">
             <h3 class="card-title">Vimancer</h3>
@@ -165,11 +201,21 @@
             </div>
           </div>
         </div>
+        </div>
 
-        <!-- KOReader Bookshelf Screensaver -->
+        <!-- KOReader pair -->
+        <div class="project-card project-pair">
+          <div class="project-polaroid">
+            <img
+              class="polaroid-img"
+              src="assets/bookshelf_koreader.jpeg"
+              alt="KOReader Bookshelf Screensaver"
+            />
+            <div class="polaroid-caption">KOReader Bookshelf</div>
+          </div>
         <div
           id="project-koreader"
-          class="card p-3 bg-dark text-white project-card"
+          class="card p-3 bg-dark text-white"
         >
           <div class="card-body">
             <h3 class="card-title">KOReader Bookshelf Screensaver</h3>
@@ -189,42 +235,59 @@
             </div>
           </div>
         </div>
+        </div>
 
-        <!-- Flux -->
-        <div id="project-flux" class="card p-3 bg-warning project-card">
-          <div class="card-body">
-            <h3 class="card-title">Flux</h3>
-            <p class="card-text fs-5">
-              MacOS app that enables elaborate day planning and responsive
-              journaling to create enhanced positive and negative feedback
-              mechanisms than TODO lists.
-            </p>
-            <div class="d-flex justify-content-between">
-              <p class="text-body-secondary">
-                <i>Swift, SwiftUI</i>
+        <!-- Flux pair -->
+        <div class="project-card project-pair">
+          <div id="project-flux" class="card p-3 bg-warning">
+            <div class="card-body">
+              <h3 class="card-title">Flux</h3>
+              <p class="card-text fs-5">
+                MacOS app that enables elaborate day planning and responsive
+                journaling to create enhanced positive and negative feedback
+                mechanisms than TODO lists.
               </p>
-              <a href="http://ameyrk.me/Flux">ameyrk.me/Flux</a>
+              <div class="d-flex justify-content-between">
+                <p class="text-body-secondary">
+                  <i>Swift, SwiftUI</i>
+                </p>
+                <a href="http://ameyrk.me/Flux">ameyrk.me/Flux</a>
+              </div>
             </div>
+          </div>
+          <div class="project-polaroid">
+            <img class="polaroid-img" src="assets/flux.png" alt="Flux" />
+            <div class="polaroid-caption">Flux</div>
           </div>
         </div>
 
-        <!-- LED Scoreboard -->
-        <div id="project-leds" class="card p-3 bg-info text-white project-card">
-          <div class="card-body">
-            <h3 class="card-title">LED Scoreboard</h3>
-            <p class="card-text fs-5">
-              A RaspberryPI powered LED scoreboard decoration for folks who love
-              sports. Displays live scores of favorite teams from NHL, NBA, MLB,
-              LaLiga.
-            </p>
-            <div class="d-flex justify-content-between">
-              <p class="text-white">
-                <i>RaspberryPI, Python</i>
+        <!-- LED Scoreboard pair -->
+        <div class="project-card project-pair">
+          <div id="project-leds" class="card p-3 bg-info text-white">
+            <div class="card-body">
+              <h3 class="card-title">LED Scoreboard</h3>
+              <p class="card-text fs-5">
+                A RaspberryPI powered LED scoreboard decoration for folks who
+                love sports. Displays live scores of favorite teams from NHL,
+                NBA, MLB, LaLiga.
               </p>
-              <a class="text-white" href="https://srdesignledboard.github.io/"
-                >srdesignledboard.github.io</a
-              >
+              <div class="d-flex justify-content-between">
+                <p class="text-white">
+                  <i>RaspberryPI, Python</i>
+                </p>
+                <a class="text-white" href="https://srdesignledboard.github.io/"
+                  >srdesignledboard.github.io</a
+                >
+              </div>
             </div>
+          </div>
+          <div class="project-polaroid">
+            <img
+              class="polaroid-img"
+              src="assets/ledscoreboard.png"
+              alt="LED Scoreboard"
+            />
+            <div class="polaroid-caption">LED Scoreboard</div>
           </div>
         </div>
 
@@ -272,10 +335,15 @@
           </div>
         </div>
 
-        <!-- DVDTS -->
+        <!-- DVDTS pair -->
+        <div class="project-card project-pair">
+          <div class="project-polaroid">
+            <img class="polaroid-img" src="assets/dvdts.gif" alt="DVDTS" />
+            <div class="polaroid-caption">DVDTS</div>
+          </div>
         <div
-          id="project-flux"
-          class="card p-3 bg-primary text-white project-card"
+          id="project-dvdts"
+          class="card p-3 bg-primary text-white"
         >
           <div class="card-body">
             <h3 class="card-title">DVDTS</h3>
@@ -292,6 +360,7 @@
               >
             </div>
           </div>
+        </div>
         </div>
 
         <!-- YACA -->
@@ -354,15 +423,24 @@
         .querySelectorAll('[data-bs-toggle="tooltip"]')
         .forEach((el) => new bootstrap.Tooltip(el));
 
-      document.querySelectorAll(".project-card").forEach((card) => {
-        const angle = Math.random() * 4 - 1;
-        card.style.transform = `rotate(${angle}deg)`;
-      });
+      document
+        .querySelectorAll(
+          "#masonry-grid .card, #masonry-grid .project-polaroid"
+        )
+        .forEach((el) => {
+          const angle = Math.random() * 4 - 1;
+          el.style.transform = `rotate(${angle}deg)`;
+        });
 
-      new Masonry("#masonry-grid", {
+      const msnry = new Masonry("#masonry-grid", {
         itemSelector: ".project-card",
         columnWidth: ".project-card",
         percentPosition: true,
+      });
+
+      document.querySelectorAll("#masonry-grid img").forEach((img) => {
+        if (img.complete) return;
+        img.addEventListener("load", () => msnry.layout());
       });
     </script>
   </body>
