@@ -28,7 +28,8 @@
 
       #masonry-grid .card,
       #masonry-grid .project-polaroid {
-        box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.12),
+        box-shadow:
+          -2px -2px 4px rgba(0, 0, 0, 0.12),
           4px 4px 8px rgba(0, 0, 0, 0.25);
       }
 
@@ -76,11 +77,11 @@
         >
       </span>
 
-      <div class="progress my-4" style="height: 1.5rem;">
+      <div class="progress my-4" style="height: 1.5rem">
         <div
           class="progress-bar bg-info"
           role="progressbar"
-          style="width: 31%;"
+          style="width: 31%"
           aria-valuenow="31"
           aria-valuemin="0"
           aria-valuemax="100"
@@ -90,7 +91,7 @@
         <div
           class="progress-bar bg-danger"
           role="progressbar"
-          style="width: 2%;"
+          style="width: 2%"
           aria-valuenow="2"
           aria-valuemin="0"
           aria-valuemax="100"
@@ -100,7 +101,7 @@
         <div
           class="progress-bar bg-info"
           role="progressbar"
-          style="width: 11%;"
+          style="width: 11%"
           aria-valuenow="11"
           aria-valuemin="0"
           aria-valuemax="100"
@@ -110,7 +111,7 @@
         <div
           class="progress-bar bg-warning"
           role="progressbar"
-          style="width: 33%;"
+          style="width: 33%"
           aria-valuenow="33"
           aria-valuemin="0"
           aria-valuemax="100"
@@ -120,7 +121,7 @@
         <div
           class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
           role="progressbar"
-          style="width: 23%;"
+          style="width: 23%"
           aria-valuenow="23"
           aria-valuemin="0"
           aria-valuemax="100"
@@ -181,26 +182,23 @@
             />
             <div class="polaroid-caption">Vimancer</div>
           </div>
-        <div
-          id="project-vimancer"
-          class="card p-3 bg-success text-white"
-        >
-          <div class="card-body">
-            <h3 class="card-title">Vimancer</h3>
-            <p class="card-text fs-5">
-              An educational game with reimagination of commands from Vim-like
-              editors as magic!
-            </p>
-            <div class="d-flex justify-content-between">
-              <p class="text-white">
-                <i>Godot, LibreSprite, Strudel-REPL</i>
+          <div id="project-vimancer" class="card p-3 bg-success text-white">
+            <div class="card-body">
+              <h3 class="card-title">Vimancer</h3>
+              <p class="card-text fs-5">
+                An educational game with reimagination of commands from Vim-like
+                editors as magic!
               </p>
-              <a href="https://ameyrk.itch.io/vimancer" class="text-white"
-                >ameyrk.itch.io/vimancer</a
-              >
+              <div class="d-flex justify-content-between">
+                <p class="text-white">
+                  <i>Godot, LibreSprite, Strudel-REPL</i>
+                </p>
+                <a href="https://ameyrk.itch.io/vimancer" class="text-white"
+                  >ameyrk.itch.io/vimancer</a
+                >
+              </div>
             </div>
           </div>
-        </div>
         </div>
 
         <!-- KOReader pair -->
@@ -213,28 +211,54 @@
             />
             <div class="polaroid-caption">KOReader Bookshelf</div>
           </div>
-        <div
-          id="project-koreader"
-          class="card p-3 bg-dark text-white"
-        >
-          <div class="card-body">
-            <h3 class="card-title">KOReader Bookshelf Screensaver</h3>
-            <p class="card-text fs-5">
-              Custom KOReader screensaver to show recently read books as a
-              bookshelf for e-book readers like Kindle and Kobo.
-            </p>
-            <div class="d-flex justify-content-between">
-              <p class="text-white">
-                <i>Lua</i>
+          <div id="project-koreader" class="card p-3 bg-primary text-white">
+            <div class="card-body">
+              <h3 class="card-title">KOReader Bookshelf Screensaver</h3>
+              <p class="card-text fs-5">
+                Custom KOReader screensaver to show recently read books as a
+                bookshelf for e-book readers like Kindle and Kobo.
               </p>
-              <a
-                class="text-white"
-                href="https://github.com/ameyrk99/koreader-patches-plugins"
-                >Github/koreader-patches-plugins</a
-              >
+              <div class="d-flex justify-content-between">
+                <p class="text-white">
+                  <i>Lua</i>
+                </p>
+                <a
+                  class="text-white"
+                  href="https://github.com/ameyrk99/koreader-patches-plugins"
+                  >Github/koreader-patches-plugins</a
+                >
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- In Reverse pair -->
+        <div class="project-card project-pair">
+          <div
+            id="project-in-reverse"
+            class="card p-3 bg-danger text-white"
+          >
+            <div class="card-body">
+              <h3 class="card-title">In Reverse</h3>
+              <p class="card-text fs-5">
+                A Unity prototype where you play as Mater from Cars, driving in
+                reverse to dodge obstacles through the Cozy Cone Motel.
+              </p>
+              <div class="d-flex justify-content-between">
+                <p class="text-white">
+                  <i>Unity, C#</i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="project-polaroid">
+            <img
+              class="polaroid-img"
+              src="assets/in-reverse.gif"
+              alt="In Reverse"
+            />
+            <div class="polaroid-caption">In Reverse</div>
+          </div>
         </div>
 
         <!-- Flux pair -->
@@ -341,26 +365,23 @@
             <img class="polaroid-img" src="assets/dvdts.gif" alt="DVDTS" />
             <div class="polaroid-caption">DVDTS</div>
           </div>
-        <div
-          id="project-dvdts"
-          class="card p-3 bg-primary text-white"
-        >
-          <div class="card-body">
-            <h3 class="card-title">DVDTS</h3>
-            <p class="card-text fs-5">
-              A terminal screensaver like the DVD logo. Uses either distro/OS
-              name or custom text that supports piped input.
-            </p>
-            <div class="d-flex justify-content-between">
-              <p class="text-white">
-                <i>Go</i>
+          <div id="project-dvdts" class="card p-3 bg-primary text-white">
+            <div class="card-body">
+              <h3 class="card-title">DVDTS</h3>
+              <p class="card-text fs-5">
+                A terminal screensaver like the DVD logo. Uses either distro/OS
+                name or custom text that supports piped input.
               </p>
-              <a class="text-white" href="https://github.com/ameyrk99/dvdts"
-                >Github/dvdts</a
-              >
+              <div class="d-flex justify-content-between">
+                <p class="text-white">
+                  <i>Go</i>
+                </p>
+                <a class="text-white" href="https://github.com/ameyrk99/dvdts"
+                  >Github/dvdts</a
+                >
+              </div>
             </div>
           </div>
-        </div>
         </div>
 
         <!-- YACA -->
@@ -425,7 +446,7 @@
 
       document
         .querySelectorAll(
-          "#masonry-grid .card, #masonry-grid .project-polaroid"
+          "#masonry-grid .card, #masonry-grid .project-polaroid",
         )
         .forEach((el) => {
           const angle = Math.random() * 4 - 1;
